@@ -1,0 +1,52 @@
+{
+  "id": "/",
+  "name": "USA HELOC",
+  "short_name": "USA HELOC",
+  "description": "Home Equity, Made Clear.",
+  "lang": "en-US",
+  "dir": "ltr",
+  "start_url": "./index.html?src=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFFFFF",
+  "theme_color": "#152B6B",
+  "categories": [
+    "finance",
+    "utilities",
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "usa-brand/icons/usa-favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "usa-brand/icons/usa-apple-touch-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "usa-brand/icons/usa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "usa-brand/icons/usa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "usa-brand/icons/usa-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "x_usa_heloc_note": "PLACEHOLDER icons generated 2026-11-01 by tools/build_preview.py; replace with approved artwork."
+}

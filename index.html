@@ -1,0 +1,2928 @@
+<!doctype html>
+<html lang="en" data-usa-preview="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>USA HELOC &mdash; Home Equity, Made Clear.</title>
+<meta name="description" content="USA HELOC is the front door for home equity lines of credit. Ask your question, then talk to a licensed loan officer. Information, not an offer.">
+
+<meta name="theme-color" content="#152B6B">
+
+<link rel="canonical" href="https://usaheloc.com/">
+
+<meta name="royal-engine" content="https://royal-claude-brain.onrender.com">
+
+<link rel="preconnect" href="https://royal-claude-brain.onrender.com" crossorigin>
+<link rel="dns-prefetch" href="https://royal-claude-brain.onrender.com">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="USA HELOC">
+<meta property="og:url" content="https://usaheloc.com/">
+<meta property="og:title" content="USA HELOC &mdash; Home Equity, Made Clear.">
+<meta property="og:image" content="https://usaheloc.com/usa-brand/icons/usa-cover-1024.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:alt" content="The USA HELOC lockup on white.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="USA HELOC &mdash; Home Equity, Made Clear.">
+<meta name="twitter:image" content="https://usaheloc.com/usa-brand/icons/usa-cover-1024.png">
+
+<link rel="manifest" href="manifest-usaheloc.webmanifest">
+<link rel="icon" href="usa-brand/icons/usa-favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="usa-brand/icons/usa-favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="usa-brand/icons/usa-apple-touch-180.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="USA HELOC">
+
+<link rel="stylesheet" href="_royal-system/royal-system.css">
+<link rel="stylesheet" href="_royal-system/front-door/front-door.css">
+<link rel="stylesheet" href="usa-brand/usa-brand.css"><!-- USA HELOC: every brand colour lives here -->
+
+<style>
+  /* THE FINAL LOCKUP (Bryan, 7/28/2026 evening). One logo, one family: the
+     Royal Ai lockup is the header mark on every page of every Royal site.
+     It is INLINED, never <img>'d, so the page's own Montserrat and CSS can
+     reach it. HEIGHT IS SET AND WIDTH IS NOT — the viewBox fixes the
+     5.42:1 aspect and the width follows it. Never hand-recolour the navy:
+     it is a ten-stop glass gradient, not a flat fill. */
+  /* WHY THE OUTER <svg> REPEATS THE viewBox, AND WHY THE <use> CARRIES
+     GEOMETRY. Measured in the browser, not assumed. A bare
+     <svg class="brandmark"><use href="#..."></svg> has NO intrinsic aspect
+     ratio of its own - the viewBox on the <symbol> is inside it, not on it -
+     so width:auto falls back to the CSS default of 300px for a replaced
+     element with no intrinsic size. The mark then letterboxes inside a
+     300px box and simply stops growing, whatever height you set. Repeating
+     the viewBox on the outer element gives it the real 5.42:1 ratio, and
+     because that viewBox has a NON-ZERO origin (146 450) the <use> must be
+     given the same rectangle explicitly or the symbol lands at user-space
+     (0,0) and paints completely off the visible area. With both in place
+     the rendered box measures 309.05 x 57 - exactly 694/128. Height is
+     still the only thing CSS sets; a viewBox is not a width. */
+  .lockupdef{position:absolute;width:0;height:0;overflow:hidden}
+  .markwrap .brand{display:block;text-decoration:none;max-width:100%}
+  img.brandmark{height:clamp(40px,7.2vw,64px);width:auto;display:block;max-width:100%}
+  .markwrap .brand:focus-visible{outline:3px solid var(--gold);outline-offset:6px;
+    border-radius:10px}
+
+  /* =====================================================================
+     THE OUT BUTTON — REMOVED 2026-07-31, RAI.v7/ROVER v3 Phase 4 (B-3).
+     Bryan's ruling tonight: it cannot work on iPhone, and Android users
+     already have a back button. CSS block retired here as a dated comment
+     per THE NEVER-DELETE LAW; the full original rule text (.outrow,
+     .outbtn, .outbtn svg, .outbtn:focus-visible) and the markup it styled
+     are preserved verbatim in
+     _superseded/2026-07-31-out-button-retired/index-out-button-fragment.html.
+     ===================================================================== */
+
+  /* =====================================================================
+     THE TAGLINE  ·  7/31/2026, non-negotiable and exact
+     "Not Just The Estimate, The Answer." — Montserrat, #253069 + #CBA260,
+     and the capital A of "Answer" is the Royal Ai GLASSMORPHISM A: the
+     <use> below rides #royal-glass-A, whose path is machine-copied from
+     the filed lockup's own gold A (the gGoldO glass gradient). Nothing
+     was redrawn. The h1 carries the full sentence for screen readers in
+     a .sr span; the visual run is aria-hidden so the word "Answer" is
+     never read as "nswer".
+     ===================================================================== */
+  .anchorline.tagline{color:var(--navy);font-weight:700;
+    font-size:clamp(14.5px,2.3vw,19px);letter-spacing:.01em}
+  /* No whitespace sits between "The" and the A in the markup, so the word
+     can never wrap in half; the left margin below IS the word space. */
+  .tagline .glassA{height:1.08em;width:auto;display:inline-block;
+    vertical-align:-.14em;margin:0 -.01em 0 .28em}
+
+  /* 8/5/2026 — THE TAGLINE A GOES MATTE NAVY. Bryan: "change the second
+     golden A with the key hole below the Ai to just be matte blue to match
+     the rest of the words. It should stay in the ROYAL A with the key, but
+     not be competing with the gold directly above it."
+
+     He is applying Rule 2 and he is right: gold marks the ONE element
+     carrying the meaning, and two golds stacked an inch apart — the Ai
+     lockup and then the A of "Answer" — split that meaning in half. The
+     lockup keeps the gold; the tagline goes back to being a sentence.
+
+     THIS IS A RE-COLOUR, NOT A REDESIGN (Trap 3). The letterform, the key
+     and the keyhole are untouched — the shipped path still is the filed
+     lockup's own A, machine-copied, with its counters intact. Only the
+     paint changes, so gold-off is pixel-identical by construction.
+
+     WHY THE SYMBOL AND NOT THE <use>: `fill="url(#gGoldO)"` is a
+     presentation attribute on the path, so an inherited fill from the
+     parent svg would lose to it. A CSS rule beats a presentation attribute
+     outright, and #royal-glass-A is used EXACTLY ONCE on this page — by the
+     tagline — so nothing else can be repainted by accident. The header
+     lockup carries its own gold and is not touched.
+
+     AND var(--navy), NEVER A LITERAL: "match the rest of the words" only
+     stays true if the A resolves to the same token the sentence around it
+     uses. Hard-coding a hex here is exactly how the two navies drifted
+     apart in the first place. */
+  #royal-glass-A path{fill:var(--navy)}
+
+  /* =====================================================================
+     THE CONVERSATION  ·  Part 4A, 7/31/2026
+     The chat lives BETWEEN the tagline and the ask bar. It is display:none
+     until the visitor's own tap — no keyframe, no rise, no arrival on
+     arrival — and once open it stays. The transcript scrolls inside its
+     own box (in-flow; the page never scrolls sideways) so the visitor can
+     read the last few paragraphs and scroll up for history. It is fine
+     that the emblem scrolls away once the conversation grows.
+
+     BIG TYPE ON PURPOSE, carried over from the 7/29 ruling: many
+     customers are older. 16.5-19px on 1.75 leading, full --ink.
+     ===================================================================== */
+  .chat{display:none;width:var(--fd-col);max-width:100%;margin:0 0 14px;text-align:left}
+  .chat.open{display:block}
+  .chatlabel{margin:0 0 8px;font-weight:800;font-size:15px;color:var(--navy)}
+  .chatlog{max-height:min(52vh,460px);overflow-y:auto;overflow-x:hidden;
+    border:1px solid var(--line);border-radius:18px;background:var(--card);
+    box-shadow:0 10px 30px rgba(21,43,107,.08);padding:16px 18px;
+    font-size:clamp(16.5px,2.7vw,19px);line-height:1.75;color:var(--ink)}
+  .chatlog .msg{margin:0 0 12px;white-space:pre-wrap;overflow-wrap:break-word}
+  .chatlog .msg:last-child{margin-bottom:0}
+  .chatlog .msg.u{background:#F2F4FA;border-radius:14px;padding:10px 14px;
+    margin-left:14%;color:var(--navy);font-weight:600}
+  .chatlog .msg.a{color:var(--ink)}
+
+  /* =====================================================================
+     FOLLOW THE WORDS  ·  2026-08-05, Bryan's functionality ruling
+     ---------------------------------------------------------------------
+     His words: "THE BIG COMPLAINT IS NOT BEING ABLE TO READ AND FOLLOW THE
+     WORDS THAT CLEARLY ON THE SCREEN... EMPHASIZING THE WORDS THAT ARE
+     COMING OUT AS ROVER IS SPEAKING. THIS IS OUR HIGHEST IMPORTANCE ON
+     FUNCTIONALITY."
+
+     So while he speaks, the word he is ON is lit, and everything he has
+     already said stays at full strength behind it. Nobody has to hunt for
+     their place in a paragraph, which is the actual complaint — especially
+     for the older customers this page is sized for in the first place.
+
+     WHY THE WEIGHT DOES NOT CHANGE. Bolding the live word reflows the line,
+     and a line that reflows while you are reading it is worse than no
+     emphasis at all. The lit word gets a GOLD UNDERLAY and navy ink instead:
+     zero layout movement, and it reads at arm's length.
+     THE ROYAL STANDARD: the answer is navy ink (the object); the gold is on
+     exactly one word at a time (the point). Gold never carries a letterform
+     here, so Rule 3 holds — drop the gold and every word still reads.
+     ===================================================================== */
+  .chatlog .msg.a .rv-w{border-radius:5px;padding:1px 2px;margin:0 -2px;
+    transition:background-color .12s linear,color .12s linear}
+  /* NO font-weight HERE, ON PURPOSE. Bolding the live word re-measures the
+     glyphs and shoves the rest of the paragraph sideways on every single
+     word — the one thing worse than no emphasis. Colour and background cost
+     nothing in layout, so the line never moves. */
+  .chatlog .msg.a .rv-w.rv-now{background:rgba(203,162,96,.42);color:var(--navy)}
+  .chatlog .msg.a .rv-w.rv-said{color:var(--ink)}
+  @media (prefers-reduced-motion:reduce){
+    .chatlog .msg.a .rv-w{transition:none}
+  }
+
+  /* THE READING SURFACE, ENLARGED. Same box, more room and more air, because
+     the answer is the product. Kept inside the existing clamp shape so the
+     phone layout is unchanged in kind, only in size. */
+  .chatlog{font-size:clamp(17.5px,2.9vw,20.5px);line-height:1.8}
+  .chatlog .msg{margin:0 0 16px}
+  .chatlog .msg.note{font-size:12.5px;line-height:1.6;color:var(--muted)}
+  /* =====================================================================
+     THE WAIT, MADE HONEST  ·  2026-08-02, RELEASE ORDER G
+
+     THE STATUS LINE gets its own class instead of borrowing .note, because
+     for the first several seconds after a send it is the ONLY thing on the
+     screen that is moving and it carries the whole promise that the page
+     has not frozen. A 12.5px grey aside was not carrying that.
+
+     COLOUR IS MEASURED, NOT EYEBALLED. --muted #5C6178 on --card #FFFFFF is
+     6.11:1 by the WCAG relative-luminance formula, so it clears 4.5:1 with
+     room to spare and stays --muted; the line earns its weight from size
+     and from the gold rule at its left, never from a colour that would
+     have to be checked again. The rule is the filed gold and it is a
+     4px bar of it, which is the one place gold is allowed to be the
+     quiet part: the navy type is still the object.
+     ===================================================================== */
+  .chatlog .msg.status{font-size:14px;line-height:1.65;color:var(--muted);
+    border-left:4px solid var(--gold);padding-left:12px}
+  /* THE RETENTION CHOICE — customer choice, four options, shown once after
+     the first exchange. Plain buttons, no animation.
+     THE RETRY ROW (2026-08-02, G-3) rides the identical pill so a visitor
+     who has already met one of these rows meets no new vocabulary. */
+  .chatlog .keep,
+  .chatlog .retry{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 12px}
+  /* THE BORDER IS NAVY, NOT GOLD, and that is an accessibility fix rather
+     than a design change (2026-08-02). The pill's only visual boundary was a
+     1.5px gold hairline on white, measured at 2.37:1 — under WCAG 2.2's 3:1
+     floor for the boundary of a UI component (1.4.11). Gold on white is
+     emphasis and never structure, which is the Royal Standard's own rule, and
+     a control's edge is structure. The gold stays on the surface as the inner
+     ring, so the pill still reads Royal and now also reads as a control. */
+  .chatlog .keep button,
+  .chatlog .retry button{font:600 13px/1.2 inherit;font-family:inherit;cursor:pointer;
+    color:var(--navy);background:var(--card);border:1.5px solid var(--navy);
+    box-shadow:inset 0 0 0 1.5px var(--gold);
+    border-radius:999px;padding:9px 14px;min-height:40px}
+  .chatlog .keep button:focus-visible,
+  .chatlog .retry button:focus-visible{outline:3px solid var(--navy);outline-offset:2px}
+  .chatrow{display:flex;justify-content:flex-end;margin-top:6px}
+  .newconvo{display:none;background:none;border:none;cursor:pointer;
+    font:600 12.5px/1.2 inherit;font-family:inherit;color:var(--muted);
+    text-decoration:underline;padding:6px 2px}
+  .chat.haslog .newconvo{display:inline-block}
+  .newconvo:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+  /* =====================================================================
+     THE STATE BALL  ·  THE BLUE SONNY ORDER, 8/3/2026, ruled by Bryan
+     (rule -1000, AMENDED — not repealed)
+
+     BRYAN, VERBATIM: "I don't think we should have an R on Sonny. It's
+     overkill. My final answer for Sonny is that his ROVER state is the Blue
+     Sphere. When he is awake, he will turn from gold to blue... Sonny will
+     never be able to function unless he is blue... When Sonny starts
+     talking, he will again transform from Blue Sonny back to original
+     Sonny. This time, Sonny will be bigger... He will also breathe when he
+     speaks."
+
+     ---------------------------------------------------------------------
+     WHAT THIS BLOCK SUPERSEDES, KEPT VERBATIM PER THE NEVER-DELETE LAW.
+     Full copies at _superseded/2026-08-03-blue-sonny/.
+     ---------------------------------------------------------------------
+     (1) THE AWAKE/ASLEEP LAW as written 7/31/2026:
+
+         "THE STATE BALL · THE AWAKE/ASLEEP LAW (rule -1000), 7/31/2026
+          The ball IS the state indicator, and it is the ask bar's own send
+          button — one Sonny on the page, never two (the old fixed
+          bottom-right orb is retired below; a fixed element was banned from
+          this page anyway). ASLEEP: the plain gold sphere — the bare orb
+          material front-door.css already paints, untouched. AWAKE: the
+          chrome R forms on its face (assets/coin_chromeR.png, the filed app
+          mark — never redrawn). The face appears ONLY when the engine has
+          actually proven it can answer — headers/first token or a live
+          /health 200 — never before, so the awake state can never lie. No
+          keyframe on the morph: the R is simply there once he is ready,
+          deliberately a beat late while the engine assesses."
+
+           .searchbox .rface{display:none;width:72%;height:72%;object-fit:contain}
+           .searchbox button.awake .rface{display:block}
+
+         AMENDED, NOT REPEALED: the ball is still the one state indicator and
+         there is still exactly one Sonny on the page. What changed is what
+         carries AWAKE. It is no longer the chrome R — the R is off Sonny
+         entirely — it is THE BLUE MATERIAL.
+
+     (2) The 8/2/2026 ruling that BLUE = SPEAKING is INVERTED as of 8/3.
+         Blue is AWAKE AND WORKING. SPEAKING is GOLD AND LARGE. Its own
+         block, kept verbatim, is a few rules further down this stylesheet.
+
+     ---------------------------------------------------------------------
+     TRAP 6 · THE AWAKE STATE CAN NOW LIE, AND HERE IS WHERE THE HONESTY WENT
+     ---------------------------------------------------------------------
+     The old law could never lie because the R waited for a /health 200 or a
+     first streamed token. Blue now arrives on the visitor's own touch,
+     BEFORE the engine has proven anything, because Bryan ruled that it does.
+     THE R IS NOT QUIETLY KEPT TO PRESERVE THAT CLAUSE. Honesty moved into
+     the words instead, and those words must keep firing unchanged:
+       · OFFLINE  — "The live assistant is not answering yet, so nothing you
+         typed left this device."
+       · the six staged status lines, each true of the moment it is spoken.
+     BLUE MEANS "SONNY IS ENGAGED". IT HAS NEVER MEANT "THE ENGINE IS
+     HEALTHY". Do not re-derive this; it was decided here.
+
+     ---------------------------------------------------------------------
+     THE FIVE STATES. One element. It never becomes a second element, it
+     never leaves the bar, and there is never a second sphere (TWO-SONNYS).
+     ---------------------------------------------------------------------
+       0 AT REST   gold gradient + navy magnifier   44px       still
+       1 AWAKE     blue sphere, bare                44px       still
+       2 THINKING  blue sphere, DIMMED              44px       breathes .62<->.88
+       3 LISTENING blue sphere, BARE                48.4->54.6 PULSATES with YOUR voice
+       4 SPEAKING  gold gradient + NAVY rim         88px       breathes with HIS voice
+     Then back to 1. HE NEVER RETURNS TO STATE 0 IN THE SAME VISIT (B-1).
+     Small gold means one thing only: he has not been touched yet.
+
+     ---------------------------------------------------------------------
+     STATES 2 AND 3 AMENDED 2026-08-03 BY BRYAN'S ROVER-BRAIN RULING.
+     Verbatim: "HE GOES FROM GOLD TO BLUE WHEN CALLD UPON, TURNS LIGHT BLUE
+     WHEN THINKING ABOUT SENDING TEXT AND READING, BUT HE ONCE AGAIN TURNS
+     GOLD BUT GETS BIGGER WHEN HE BEGINS TO SPEAK... THINKING ROVER TURNS
+     DIM AFTER HE IS BLUE. TALKING SONNY WILL GROW IN SIZE AND MORPH ONCE
+     AGAIN FROM BLUE TO GOLD AND SPEAKING AND LISTENING SONNY WILL PULSATE.
+     IF YOU THINK WE CAN PULSATE IN THIS BUILD, GO FOR IT."
+
+     TWO CHANGES, AND ONLY TWO. States 0, 1 and 4 were already exactly what
+     he ruled and are untouched.
+       · STATE 2 was `.72<->1`, which returned to FULL awake brightness at
+         every peak — so at any given instant thinking could be pixel-
+         identical to awake. He said thinking TURNS DIM. The breath is now
+         capped below awake, so it is dimmer at every instant of the cycle
+         and never merely dimmer on average.
+       · STATE 3 was carried by a SIBLING RING and the ball itself was
+         explicitly pinned still. He said LISTENING SONNY PULSATES. The
+         pulse moved onto SONNY. The ring is RETIRED, not deleted — see the
+         L-13 block further down this stylesheet and
+         _superseded/2026-08-03-rover-brain-listening-pulse/.
+     ---------------------------------------------------------------------
+
+     TRAP 3 · TWO GOLDS, TWO MEANINGS. Small gold is asleep, big gold is
+     speaking, and the only differences are size and sound. That is why the
+     speaking scale is 2.0x and not a polite 1.3x: at 1.3x a glancing
+     visitor cannot tell the two golds apart, and under reduced motion there
+     is no breathing left to disambiguate them. Do not shrink this number to
+     be tasteful.
+
+     THE SIZE, MEASURED. The order specifies 40px -> 80px from
+     front-door.css:168. That rule is overridden ONE LINE BELOW and has been
+     since the awake/asleep law shipped: this button is 44px, because 44px is
+     the WCAG 2.5.8 target floor and PART 8 gate 10 requires it in every
+     state. So the real numbers are 44px -> 88px at the ruled 2.0x, against a
+     56px-tall bar. The ball breaks the bar's silhouette by even more than
+     the order predicted, which is the entire point of the ruling.
+     ===================================================================== */
+  .searchbox button[type="submit"]{width:44px;height:44px;min-height:44px}
+
+  /* ---------------------------------------------------------------------
+     THE TRANSFORM TRAP. front-door.css:164 centres this button with
+     `transform: translateY(-50%)`. A bare `transform: scale(2)` written
+     here would DELETE that centring and throw the ball out of the search
+     bar. Every transform on #sonnyball is therefore COMPOSED, and the scale
+     is carried by custom properties so that one rAF loop writing a single
+     number can drive it.
+
+     THE SPEED CONTRACT: transform, opacity, and custom properties that feed
+     those two. NOTHING ELSE. No width, no height, no box-shadow, no filter,
+     no background-position — every one of those forces layout or paint on
+     every frame and would stutter an 88px ball on the exact phone this gets
+     demonstrated on.
+
+     --lvl is 0..1 and is written by js/voice.js onto #ask (the shared
+     parent) rather than onto the ball, because the listening ring and the
+     speaking rim are SIBLINGS of the ball and a custom property set on the
+     ball could never reach them. One write per frame, three readers.
+     --------------------------------------------------------------------- */
+  #sonnyball{
+    --rs-base:1;                    /* 1 at rest/awake/thinking; 2 for audio */
+    /* LITERAL 1 AT REST, AWAKE AND THINKING. --lvl reaches the ball's scale
+       in exactly TWO states as of 2026-08-03 — .listening and .speaking —
+       and each writes its own formula below. Everywhere else this stays a
+       literal 1 so a stale --lvl can never twitch a ball that is meant to
+       be still.
+       RETIRED 2026-08-03: the clause that pinned LISTENING still -> replaced
+       by the listening pulse below. Verbatim copy at
+       _superseded/2026-08-03-rover-brain-listening-pulse/. Reason: Bryan's
+       ROVER-BRAIN ruling, "SPEAKING AND LISTENING SONNY WILL PULSATE."
+         was: "DELIBERATELY LITERAL 1, NOT WIRED TO --lvl. State 3 says the
+          ball does not change size while the mic is open — only the ring
+          reacts to your voice. --lvl is live on this element the whole time
+          the mic is open (it is inherited from #ask so the sibling ring can
+          read it), so if these two were wired up here the ball would twitch
+          along with the listening ring. --lvl reaches the ball's scale in
+          exactly one state, and .speaking below is where that happens." */
+    --rs-x:1;
+    --rs-y:1;
+    transform:translateY(-50%) scale(var(--rs-x),var(--rs-y));
+    transition:transform .26s ease-out,opacity .22s cubic-bezier(.4,0,.2,1)}
+
+  /* THE RESTING GLYPH fades out on the 0 -> 1 curve and never returns —
+     B-4 chose the navy breathing rim over a counter-scaled glyph for the
+     speaking state, so nothing brings it back inside a visit. */
+  #sonnyball svg{position:relative;z-index:1;
+    transition:opacity .22s cubic-bezier(.4,0,.2,1)}
+  #sonnyball.awake svg{opacity:0}
+
+  /* ---------------------------------------------------------------------
+     BLUE SONNY · THE MATERIAL
+
+     HE IS NOT A NEW BLUE. The centre pixel of the filed cut
+     assets/sonny_blue_128.png measures #283366; brand navy is #253069. They
+     are the same colour. Blue Sonny is THE ROYAL NAVY RENDERED AS GLASS,
+     and that is exactly why he is easy on the eyes — he is already the
+     colour the whole brand is built on.
+
+     WHY CSS AND NOT THE PNG. The PNG is 128x128. At 44px on a 3x phone that
+     is 132 needed against 128 available: zero headroom, and it cannot be
+     "the best Blue Sphere we have ever created" at 88px. A gradient is
+     resolution-free, so it is pixel-perfect at 44px, 88px and 176px for
+     nothing. sonny_blue_128.png STAYS ON DISK as the reference master and
+     is still precached by sw.js; it is simply no longer painted here.
+
+     TRAP 4 · `display:grid; place-items:center` (front-door.css:169) would
+     make a static ::before a GRID ITEM and centre it as a zero-size box
+     instead of filling the ball. It is absolutely positioned, inset:0,
+     against the button — which front-door.css already positions.
+     TRAP 5 · ::after is taken by the working arc, so the skin is ::before.
+     No DOM node is added to the button for any of this.
+     --------------------------------------------------------------------- */
+  /* MEASURED, NOT INVENTED, AND MEASURED TWICE. Every number below was
+     solved against assets/sonny_blue_128.png by least squares and then
+     re-rendered and diffed. The order's own one-layer first cut
+       radial-gradient(circle at 32% 26%,#C6CAD8 0%,#6E78A6 9%,#394476 22%,
+                       #1C254F 45%,#222337 70%,#0E1024 100%)
+     measures 9.927/255 mean per-channel error and FAILS its own gate 1.
+     It fails for a structural reason, not a tuning one: the filed sphere is
+     NOT radially symmetric about any single point. The best possible
+     single radial gradient about 32%/26% floors at 8.848/255, because the
+     sphere carries a RIM LIGHT that follows its OWN edge rather than the
+     light axis. Two layers is what the order actually calls for — "build
+     him as layered CSS, matching how gold is built" — and two layers
+     measure 5.013/255. PASS.
+
+     LAYER 1 (bottom) is THE LIGHT: circle at 32% 26%, the gold orb's own
+     light source, so the two spheres are lit from the same window.
+     LAYER 2 (top) is THE RIM, centred on the sphere itself.
+
+     WHY `ellipse 62.26% 62.26%` AND NOT `circle 79.69px`. CSS will not take
+     a percentage radius on `circle`, and a px radius would be frozen at one
+     size — wrong the moment the ball scales to 88px. Two equal percentages
+     of a square box IS a circle, and it scales. That is the whole reason.
+
+     Verified: no pixel inside the ball ever reaches past 85.6% of the top
+     layer's radius, so stops beyond 86% were dropped after proving they
+     changed 0 pixels. Re-rasterise before touching any of it. */
+  #sonnyball::before{content:"";position:absolute;inset:0;border-radius:50%;
+    pointer-events:none;opacity:0;
+    background:url('assets/sonny_blue_128.png') center/100% 100% no-repeat;
+    transition:opacity .26s ease-out}
+
+  /* 0 -> 1 · THE ORIGINAL TRANSFORMATION. 220ms crossfade, and .awake is
+     never removed once set. */
+  #sonnyball.awake{background:#111936}
+  #sonnyball.awake::before{opacity:1;transition:opacity .22s cubic-bezier(.4,0,.2,1)}
+
+  /* 2 -> 4 · blue leaves over 180ms while the ball grows; 4 -> 1 · blue
+     returns over the 260ms ease-out on the base rule above. A transition
+     always comes from the state being moved TO, so the two directions get
+     their two different curves for free. */
+  #sonnyball.listening::before,
+  #sonnyball.speaking::before{opacity:0;transition:opacity .18s cubic-bezier(.4,0,.2,1)}
+
+  /* ---------------------------------------------------------------------
+     STATE 2 · THE THINKING BREATH. Bryan: "that is when he will dim or
+     lighten, just like the existing Sonny dims and lightens." The existing
+     Sonny's dim is a DEAD CONSTANT (opacity .88, a few rules below). This
+     replaces the constant with a live pulse. Brightness only — no size
+     change, pure CSS keyframes, zero JS, zero timers.
+     --------------------------------------------------------------------- */
+  /* RETIRED 2026-08-03: the .72 <-> 1.0 thinking breath -> replaced by a
+     breath CAPPED BELOW AWAKE (.62 <-> .88). Verbatim copy at
+     _superseded/2026-08-03-rover-brain-listening-pulse/index-BEFORE.html.
+     Reason: Bryan's ROVER-BRAIN ruling — "THINKING ROVER TURNS DIM AFTER HE
+     IS BLUE" and "TURNS LIGHT BLUE WHEN THINKING". The old cycle returned to
+     opacity 1 at every peak, which is pixel-identical to AWAKE, so for half
+     of every 1.6s a thinking Rover was indistinguishable from an idle one.
+     A ceiling of .88 makes him dimmer than awake at EVERY instant, which is
+     what "turns dim" means, and .88 is not a new number — it is the exact
+     dim the working state has shipped since G-2. The floor moved .72 -> .62
+     to keep the same amplitude of breath inside the lower band.
+     ON WHITE, LESS OPACITY IS LITERALLY LIGHTER BLUE: the ball composites
+     against --paper #FFFFFF, so dimming the navy sphere IS the "light blue"
+     he named. One ruling, one property, both halves of it.
+       was: @keyframes rs-think{0%,100%{opacity:.72}50%{opacity:1}} */
+  @keyframes rs-think{0%,100%{opacity:.62}50%{opacity:.88}}
+  #sonnyball.awake[aria-busy="true"]{animation:rs-think 1.6s ease-in-out infinite}
+
+  /* ---------------------------------------------------------------------
+     STATE 3 · LISTENING. SONNY HIMSELF PULSATES.  2026-08-03, ROVER BRAIN.
+
+     BRYAN, VERBATIM: "SPEAKING AND LISTENING SONNY WILL PULSATE. IF YOU
+     THINK WE CAN PULSATE IN THIS BUILD, GO FOR IT. I WILL NEVER STOP
+     PROGRESS."
+
+     WHAT THIS REPLACES. Until now the listening signal was L-13's SIBLING
+     RING and the ball was explicitly held still. The ring is retired (see
+     the L-13 block below — retired, never deleted, and it comes back with
+     one line in js/voice.js). Bryan's ruling describes colour, size and
+     pulse. So the pulse is on SONNY.
+
+     THE NUMBERS, AND WHY THEY ARE NOT THE RING'S NUMBERS. The ring ran
+     1.12 + .28*lvl. Moving that amplitude onto the ball would reach 1.40
+     = 61.6px inside a 56px bar, which makes LISTENING break the bar's
+     silhouette — and breaking the silhouette is state 4's entire job
+     (TRAP 3). So listening is deliberately quieter: it rests at 1.10 and
+     peaks at 1.24, i.e. 48.4px -> 54.6px, visibly alive and still INSIDE
+     the 56px bar. Nobody can confuse it with the 88px speaking ball.
+
+     UNIFORM, NOT SQUASH-AND-STRETCH. State 4's x/y move in OPPOSITE
+     directions because that reads as a mouth. Listening is a uniform
+     breath because he is TAKING IN, not putting out. Two different
+     motions for two different jobs, from the same one --lvl bus.
+
+     .07s LINEAR FROM THE FIRST FRAME. There is no .rs-live two-step here
+     and there does not need to be: the entry step is only 1.00 -> 1.10, so
+     unlike state 4's 320ms overshoot there is no landing for a per-frame
+     --lvl write to retarget. The ball answers the finger immediately.
+     Coming OUT, .listening comes off and the base rule's 260ms ease-out
+     carries him back to a still blue sphere.
+
+     A LISTENING BALL IS NOT DIMMED. He can be aria-busy while the mic is
+     open (a held mic over a still-streaming answer), and a thinking breath
+     fighting a listening pulse on the same 44px object is noise. Listening
+     is the state the visitor is CAUSING, so it wins the ball outright —
+     the same call state 4 already makes, one rule further down.
+     --------------------------------------------------------------------- */
+  /* FINAL 1.1 OWNER LAW, 2026-08-03: LISTENING and SPEAKING share one
+     canonical LARGE-GOLD material. Listening is a circular intake pulse;
+     speaking is the stronger speech-shaped response below. No ring is a
+     state signal. Earlier small-blue listening measurements remain above
+     as the never-delete record and are superseded by this rule. */
+  #sonnyball.listening,
+  #sonnyball.listening[aria-busy="true"]{--rs-base:2;animation:none;opacity:1;
+    --rs-x:calc(var(--rs-base) * (1 + (.030 * var(--lvl,0))));
+    --rs-y:calc(var(--rs-base) * (1 + (.030 * var(--lvl,0))));
+    transition:transform .07s linear}
+
+  /* ---------------------------------------------------------------------
+     STATE 4 · SPEAKING. Gold again — and twice the size. Because it is a
+     gradient and not a bitmap it is pixel-perfect at 88px for free, so the
+     big ball costs nothing.
+
+     ~~~ THE SUN LIFT · 2026-08-03, BRYAN'S SECOND RULING ON THIS STATE ~~~
+     "Make large Sonny a touch brighter than sleeping Sonny, while also
+      keeping him a derivative of the same beautiful gold that home base
+      Sonny is on... It must be a FULL COLORED SPHERE and bright like a
+      golden sun, but it should not leave home base of sleeping Sonny very
+      much, only a touch brighter but of course much bigger."
+
+     THE PIGMENT IS NOT RE-MIXED. front-door.css:161 carries a standing order
+     on this material — "the coin's own material, the same light source, at
+     orb scale. Never re-mix it." That order is obeyed. Each stop was moved
+     in CIELCh by one reproducible operation:
+
+         hue    HELD EXACTLY  ..... 0.00° drift on every stop, by construction
+         L*     +2.5 ............... a touch brighter
+         C*     x1.15 .............. FULL COLOURED, never washed out
+
+     Mean CIEDE2000 from home base is 2.21 — a just-noticeable step. Side by
+     side you can see it; alone nobody would call it a different gold. That
+     is exactly "does not leave home base very much".
+
+     THE SPECULAR IS PINNED AND IS NOT LIFTED. The 0% stop stays #fdf6e3,
+     byte-identical to sleeping Sonny. Two reasons, and the first is the
+     ruling itself: a plain "turn the light up" gain was built first and
+     REJECTED, because in linear light that near-white highlight blows toward
+     #FFFFFF and its chroma collapses 10.0 -> 2.8. The sphere came out PALER,
+     which is the opposite of a full coloured sphere. The second reason is
+     physics: a specular highlight is the light source's own reflection, so
+     it does not brighten when you light the object more — the diffuse body
+     does. Lifting only the body is both the correct look and the correct
+     model. DO NOT "FINISH THE JOB" BY LIFTING STOP 0.
+
+     SLEEPING SONNY IS UNTOUCHED. This override lives on .speaking and
+     nowhere else, so state 0 still paints the exact front-door.css material.
+     Two golds, and now three things separate them — size, sound, and a
+     measured 2.21 of lift. TRAP 3 gets stronger, never weaker.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     WAS, and it is one line to revert:
+       (no background override — .speaking inherited front-door.css:170
+        radial-gradient(circle at 32% 26%,#fdf6e3 0%,#f0d9a6 22%,#d5b271 45%,
+                        #ab854a 70%,#7d6238 100%))
+
+     The 2.0x lands with a slight overshoot (cubic-bezier(.34,1.4,.64,1)) so
+     it reads like a breath in rather than a zoom. `.rs-live` is set 330ms
+     later, once that landing is finished, and swaps the transition to a
+     short linear one so the per-frame breathing is not smeared by a 320ms
+     ease. On the way down there is no overshoot: both classes come off and
+     the base rule's 260ms ease-out carries him back to blue.
+
+     A SPEAKING BALL IS NEVER DIMMED. He may still be aria-busy while he
+     talks, and dimming the state that carries the meaning would read as a
+     fault, so the thinking breath is switched off here. The second selector
+     exists purely to out-specify #sonnyball.awake[aria-busy="true"] above.
+     --------------------------------------------------------------------- */
+  #sonnyball.listening,
+  #sonnyball.listening[aria-busy="true"],
+  #sonnyball.speaking,
+  #sonnyball.speaking[aria-busy="true"]{--rs-base:2;animation:none;opacity:1;
+    /* THE SUN LIFT. Same hue, +2.5 L*, x1.15 chroma. Stop 0 is home base,
+       byte-identical. Derived, never hand-picked — see the block above. */
+    background:radial-gradient(circle at 32% 26%,
+      #FDF6E3 0%,#FAE0A5 22%,#E0B86C 45%,#B58B45 70%,#866736 100%);
+    /* THE SQUASH AND STRETCH. Bryan asked for "contract and change and
+       retract and change... similar to Gemini", and a uniform pulse reads
+       as a heartbeat rather than as speech, so x and y move in opposite
+       directions. It is kept under 8% on purpose — past that it stops
+       looking like a voice and starts looking like a water balloon. */
+    --rs-x:calc(var(--rs-base) * (1 + (.060 * var(--lvl,0))));
+    --rs-y:calc(var(--rs-base) * (1 - (.040 * var(--lvl,0))));
+    transition:transform .32s cubic-bezier(.34,1.4,.64,1),
+               opacity .18s cubic-bezier(.4,0,.2,1)}
+  #sonnyball.speaking.rs-live,
+  #sonnyball.speaking.rs-live[aria-busy="true"]{transition:transform .07s linear}
+  @keyframes rs-listen-glow{0%,100%{filter:brightness(.98)}50%{filter:brightness(1.08)}}
+  #sonnyball.listening,
+  #sonnyball.listening[aria-busy="true"]{
+    --rs-x:calc(var(--rs-base) * (1.02 + (.030 * var(--lvl,0))));
+    --rs-y:calc(var(--rs-base) * (1.02 + (.030 * var(--lvl,0))));
+    animation:rs-listen-glow 1.25s ease-in-out infinite}
+
+  /* ===================================================================
+     8/8/2026 · THE FOUR STATES MUST BE UNMISTAKABLE — Bryan's ruling.
+     ===================================================================
+     "The Golden Son must always be frozen when it is not in listening
+     mode." And separately: thinking "should also be a different look
+     than the look that we see when he is in listening mode," and
+     talking "should be a completely different appearance."
+
+     THE DEFECT THIS CLOSES. Voice mode holds `.speaking` between turns
+     so the sun stays up (8/5 ruling). That made WAITING and TALKING the
+     same class, wearing the same face — the user could not tell whether
+     Rover was hearing them, thinking, or answering. Three different
+     things, one appearance.
+
+     THE VOCABULARY, and every one of the four is now visually distinct:
+       LISTENING  .listening      alive — glow + live amplitude.
+                                  THE ONLY STATE WITH MOTION.
+       THINKING   .rs-frozen     FROZEN and dimmed. Time stops.
+       TALKING    .speaking.rs-live  2x gold, navy rim, lit words.
+       ASLEEP     .awake / rest   blue.
+
+     WHY FROZEN IS THE HONEST CHOICE, and it is the whole point: if the
+     ball is moving, it is hearing you. That is a promise the page makes
+     with motion instead of words. A ball that moves while deaf is a lie
+     — the same reasoning that flattened the Android wobble in v94.
+
+     `animation:none` and a fixed transform, not merely a slower one:
+     a paused-looking animation still resumes mid-cycle and reads as a
+     stutter. Frozen means frozen. */
+  #sonnyball.rs-frozen,
+  #sonnyball.rs-frozen[aria-busy="true"],
+  #sonnyball.speaking.rs-frozen,
+  #sonnyball.speaking.rs-frozen[aria-busy="true"]{
+    animation:none!important;
+    --lvl:0;
+    filter:brightness(.90) saturate(.94);
+    transition:filter .22s ease-out,transform .26s ease-out}
+
+  /* ===================================================================
+     8/8/2026 · THE SPIN AND THE SLAM — Bryan's ruling, verbatim spec.
+     ===================================================================
+     "He will come out and he will do exactly two full 360 degree
+     rotations, meaning he will spin like he is a planet. And after he
+     is done spinning he will slam into his new home location, similar
+     to the slam feature that is found on an iPhone... it will land the
+     browser so hard on that search bar that we will not need any words
+     to tell people that that is what they have to do."
+
+     🔒 EXCLUSIVITY IS THE MEANING. His words: "the only time that Sonny
+     will be doing any rotations at all whatsoever is when he turns from
+     golden Sonny into blue Sonny." Nothing else on this page spins. The
+     moment a second thing rotates, this stops being a sentence and
+     becomes decoration. Do not add a second caller.
+
+     TWO ROTATIONS. Not one, not three, not "about two" — 720deg exactly,
+     and the ball lands at 720 so the resting transform is identity.
+
+     THE SLAM lands at 88% and overshoots INTO the seat rather than
+     easing to it: scale dips under 1 on impact, then settles. The
+     aftershock is a sibling animation on the FORM (.rs-quake below), so
+     the bar itself takes the hit — that is what makes it read as weight
+     rather than as a spinning icon.
+
+     THE SPEED LAW: 620ms total. Bryan: "nothing should happen slow."
+     Two rotations inside 620ms is fast enough to read as force and slow
+     enough to be legible at 60fps.
+
+     🚨 THE TRANSFORM TRAP APPLIES HERE TOO, and it is the reason every
+     frame below re-states translateY(-50%): front-door.css:164 centres
+     this button with it, and a bare `transform:rotate(...)` in a keyframe
+     DELETES that centring and throws the ball out of the bar for the
+     length of the animation. Composed, every frame, on purpose. */
+  @keyframes rs-spinslam{
+    0%   {transform:translateY(-50%) rotate(0deg)   scale(var(--rs-slam-from,2))}
+    62%  {transform:translateY(-50%) rotate(560deg) scale(1.16)}
+    88%  {transform:translateY(-50%) rotate(720deg) scale(.86)}
+    100% {transform:translateY(-50%) rotate(720deg) scale(1)}
+  }
+  @keyframes rs-quake{
+    0%   {transform:translate(0,0)}
+    18%  {transform:translate(0,3px)}
+    38%  {transform:translate(-2px,-2px)}
+    58%  {transform:translate(2px,1px)}
+    78%  {transform:translate(-1px,0)}
+    100% {transform:translate(0,0)}
+  }
+  #sonnyball.rs-spinslam{
+    animation:rs-spinslam .62s cubic-bezier(.22,.9,.24,1) 1 both!important;
+    transition:none!important}
+  .searchbox.rs-quake{animation:rs-quake .34s cubic-bezier(.36,.07,.19,.97) 1 both}
+
+  /* REDUCED MOTION: the spin is removed, the SLAM is not. The arrival
+     still has to be felt or the instruction is lost — so it keeps the
+     impact and drops the rotation, which is the part that causes
+     trouble. The quake shrinks to a single settle.
+
+     🚨 A SECOND NAME, NOT A REDEFINITION, AND THIS IS NOT STYLE.
+     Measured in the browser 8/8: declaring `@keyframes rs-spinslam` a
+     SECOND time inside this media block removed the full-motion one from
+     the document's keyframes registry entirely — `rs-spinslam` resolved
+     to nothing and the ball did not spin AT ALL, on any display. Keyframe
+     names resolve globally by name; a later declaration supersedes an
+     earlier one whether or not its media query is the one that matches.
+     The reduced-motion variant therefore gets its OWN name, and the media
+     query switches which name the RULE points at. That is the only form
+     of this that works. Do not merge them back together. */
+  @keyframes rs-slamonly{
+    0%   {transform:translateY(-50%) scale(var(--rs-slam-from,2))}
+    70%  {transform:translateY(-50%) scale(.92)}
+    100% {transform:translateY(-50%) scale(1)}
+  }
+  @media (prefers-reduced-motion:reduce){
+    #sonnyball.rs-spinslam{
+      animation:rs-slamonly .26s cubic-bezier(.22,.9,.24,1) 1 both!important}
+    .searchbox.rs-quake{animation:none}
+  }
+
+  /* B-4 · WHAT CARRIES NAVY ON THE BIG GOLD BALL. A navy rim that expands
+     and contracts with his voice: it is the Gemini vocabulary Bryan named,
+     it IS the shape change he described ("contract and change and retract
+     and change"), and it satisfies THE ROYAL STANDARD by itself — navy
+     object on a gold field. It is a SIBLING node, never a repaint of the
+     ball, and it exists only while he is audibly speaking.
+
+     It is deliberately NOT the listening ring and must never be mistaken
+     for the brand ring device: plain stroke, no bevel, no glass, no
+     keystone, no gradient. Its box is measured off the ball's own rect
+     BEFORE the ball scales, so it can never drift if a future pass
+     re-lays-out the bar, and it then rides the same two custom properties.
+     Its amplitude is larger than the ball's so the rim visibly breathes
+     AGAINST him instead of moving with him as one rigid object. */
+  .speakrim{position:absolute;pointer-events:none;
+    border-radius:50%;box-sizing:border-box;
+    border:2px solid var(--navy);
+    --rr-base:1;opacity:0;
+    transform:scale(calc(var(--rr-base) * (1.10 + (.16 * var(--lvl,0)))),
+                    calc(var(--rr-base) * (1.10 + (.10 * var(--lvl,0)))));
+    /* NO OVERSHOOT ON THE WAY DOWN. A transition is taken from the state
+       being moved TO, so the base rule is the one that runs when .speaking
+       comes off — which is why the ease-out lives here and the overshoot
+       lives on the .speaking rule, and not the other way round. */
+    transition:transform .26s ease-out,opacity .18s ease-out}
+  #sonnyball.speaking ~ .speakrim{--rr-base:2;opacity:1;
+    transition:transform .32s cubic-bezier(.34,1.4,.64,1),opacity .18s ease-out}
+  #sonnyball.speaking.rs-live ~ .speakrim{transition:transform .07s linear}
+
+  /* FINAL 1.1 OWNER LAW: both historic audio rings are retained above and
+     below as audit history, but neither may render in a production state. */
+  .speakrim,.listenring{display:none!important}
+
+  /* ---------------------------------------------------------------------
+     REDUCED MOTION · THE MEANING MUST SURVIVE, AND THIS IS NOT OPTIONAL.
+     No breathing and no crossfade — states switch instantly. BUT THE
+     SPEAKING BALL IS STILL 2.0x AND STILL GOLD, and the navy rim is still
+     there, held steady. Size and colour carry the meaning; motion only
+     decorates it. A visitor with vestibular sensitivity must still be able
+     to tell that Rover is talking.
+
+     2026-08-03, ROVER BRAIN — THE SAME PROMISE, NOW OWED TO TWO MORE
+     STATES, and both are held by SIZE AND COLOUR, never by motion:
+      · LISTENING holds at a steady 1.10 (48.4px). Bryan's pulse is a
+        decoration on top of a size step that is there whether it pulses or
+        not, so a reduced-motion visitor still sees a ball that grew when
+        the mic opened. A-3 is satisfied three times over even if this
+        stylesheet failed entirely: .rovermic.on is GOLD while the mic is
+        live, and "Listening." lands in the aria-live log. There is no
+        state on this page where audio is open and nothing says so.
+      · THINKING holds at .75, not the .88 it used to. .88 is the CEILING
+        of the live breath; a reduced-motion visitor gets no breath at all,
+        so the one static number they do get has to carry the whole "he is
+        dim" meaning on its own. .75 against an awake 1.0 is unmistakable
+        and is still far above anything that would read as disabled.
+     --------------------------------------------------------------------- */
+  @media (prefers-reduced-motion:reduce){
+    /* 🐛 DEFECT FOUND AND FIXED 2026-08-03, ROVER BRAIN AUDIT — THIS LIST
+       WAS BEING OUT-SPECIFIED AND SILENTLY LOSING.
+       `#sonnyball` is (1,0,0). `#sonnyball.speaking` is (1,1,0),
+       `#sonnyball.speaking[aria-busy="true"]` is (1,2,0),
+       `#sonnyball.speaking ~ .speakrim` is (1,2,0) — and every one of those
+       declares its OWN `transition` further up this stylesheet. A more
+       specific rule wins regardless of which media query it sits in, so
+       `transition:none` here never reached the speaking ball, the rs-live
+       ball or the rim: a visitor with prefers-reduced-motion has been
+       getting the full 320ms overshoot on an 88px sphere and a 70ms
+       tracking transition on the rim this whole time. The scale and the
+       colour were correctly pinned; only the MOTION between states leaked,
+       which is exactly the part reduced motion exists to remove.
+       Every state selector that declares a transition is now named here at
+       its own specificity. Nothing else changed: the 2.0x, the gold, the
+       navy rim and the 1.10 listening step are all still held. */
+    #sonnyball,
+    #sonnyball svg,
+    #sonnyball::before,
+    #sonnyball.awake::before,
+    #sonnyball.listening::before,
+    #sonnyball.speaking::before,
+    #sonnyball.listening,
+    #sonnyball.listening[aria-busy="true"],
+    #sonnyball.speaking,
+    #sonnyball.speaking[aria-busy="true"],
+    #sonnyball.speaking.rs-live,
+    #sonnyball.speaking.rs-live[aria-busy="true"],
+    #sonnyball.speaking ~ .speakrim,
+    #sonnyball.speaking.rs-live ~ .speakrim,
+    .speakrim{transition:none}
+    /* RETIRED 2026-08-03: opacity:.88 -> replaced by .75. Verbatim copy at
+       _superseded/2026-08-03-rover-brain-listening-pulse/index-BEFORE.html.
+       Reason: the live breath's ceiling moved to .88, so .88 stopped being
+       a dim and became the brightest point of thinking.
+         was: #sonnyball.awake[aria-busy="true"]{animation:none;opacity:.88} */
+    #sonnyball.awake[aria-busy="true"]{animation:none;opacity:.75}
+    /* THE LISTENING PULSE IS PINNED OFF IN CSS, not merely left unwritten
+       by JS — the same rule state 4 already gets, for the same reason. The
+       amplitude bus refuses to start under reduced motion, but a stale
+       --lvl from a session that began before the visitor turned it on must
+       not be able to leak a pulse into a state meant to be still. THE SIZE
+       STEP SURVIVES: he is still 1.10, because size carries the meaning. */
+    #sonnyball.listening,
+    #sonnyball.listening[aria-busy="true"]{
+      --rs-x:var(--rs-base);--rs-y:var(--rs-base)}
+    /* THE BREATH IS PINNED OFF IN CSS, not merely left unwritten by JS.
+       The amplitude bus already refuses to start under reduced motion, so
+       --lvl stays 0 — but "safe because nobody writes it" is a promise, and
+       this makes it a rule. A stale --lvl from a session that began before
+       the visitor turned reduced motion on can no longer leak a squash into
+       a state that is supposed to be perfectly still. The 2.0x and the gold
+       are untouched: size and colour carry the meaning. */
+    #sonnyball.speaking,
+    #sonnyball.speaking[aria-busy="true"]{
+      --rs-x:calc(var(--rs-base) * 1.035);--rs-y:calc(var(--rs-base) * .975)}
+    .speakrim{transform:scale(calc(var(--rr-base) * 1.10))}
+  }
+
+  /* =====================================================================
+     ROVER'S VOICE  ·  WAVE 4  ·  2026-08-02
+     PART TWO, PART A (A-4 the mic, A-5 the teaching line, A-6 consent)
+     and L-13 (THE NAVY LISTENING RING, ruled 8/1 by Bryan, option (a)).
+
+     🚨 NOTHING BELOW RENDERS TODAY. js/voice.js ships with ENABLED=false
+     and returns before it creates a single node, so none of these
+     selectors ever match. This is the styling that lands the day L-1 is
+     answered — it is here so the flip stays ONE LINE, per A-7.
+     8/2/2026 LATE: L-1 IS ANSWERED — Bryan's talking-rover order. ENABLED
+     is now true in js/voice.js and everything below RENDERS. The three
+     lines above are the dormant-era record, kept per the never-delete law.
+     ===================================================================== */
+
+  /* A-4 · THE MIC. The order offers press-and-hold on the ball, a mic
+     glyph inside it, or — "if it is genuinely ambiguous" — a SEPARATE,
+     CLEARLY-LABELLED mic target beside the ball, because "a discoverable
+     second button beats a hidden gesture every time." It IS ambiguous (no
+     usability check with a 68-year-old has been run, and L-13 already took
+     the ball out of the indicator job), so this is the order's own stated
+     fallback. It is a labelled control, NOT a second Sonny ball, so THE
+     TWO-SONNYS LAW is untouched.
+     44px hard minimum, reachable one-handed on a 375px screen (A-4/4). */
+  .rovermic{display:inline-flex;align-items:center;gap:6px;
+    min-width:44px;min-height:44px;padding:0 12px;margin-left:8px;
+    border:2px solid var(--navy);border-radius:22px;background:#fff;
+    color:var(--navy);font:600 13px/1 inherit;font-family:inherit;
+    cursor:pointer;flex:0 0 auto}
+  /* 8/2/2026 LATE — THE STACKED-MIC FIX, found the night the flip went
+     true and never before, because dormant CSS cannot be seen. TWO real
+     defects, both from front-door.css's generic `.searchbox button` rule
+     (specificity 0,1,1 beats bare `.rovermic` 0,1,0 on every line):
+       1. It positions EVERY .searchbox button absolute at right:8px, so
+          the mic and the send ball landed on the same spot (both at
+          left 890 in the flip-night measurement).
+       2. It paints EVERY .searchbox button as the GOLD ORB — radial gold
+          gradient, 40px circle — so the mic rendered as a SECOND SONNY
+          BALL, which THE TWO-SONNYS LAW bans outright. The .rovermic
+          base block above lost every single declaration.
+     So the whole mic treatment is restated here at 0,2,0, where it wins.
+     The base block above is kept as the record. The input's right padding
+     grows so typed words never run under the re-seated mic. */
+  .searchbox .rovermic{position:absolute;right:60px;top:50%;
+    transform:translateY(-50%);margin-left:0;
+    display:inline-flex;align-items:center;gap:6px;
+    width:auto;height:44px;min-height:44px;min-width:44px;padding:0 12px;
+    border:2px solid var(--navy);border-radius:22px;background:#fff;
+    box-shadow:none;color:var(--navy)}
+  .searchbox .rovermic svg{width:18px;height:18px;fill:none;stroke:currentColor;
+    stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .searchbox .rovermic.on{background:var(--gold);border-color:var(--navy)}
+  /* 8/5/2026 — 148 -> 164. The Talk pill grew when the Bubble R took the
+     mark slot (20 -> 30 wide) and the pill went to 44px, so typed words were
+     about to run under it. The reserve tracks the button, always. */
+  /* 8/5/2026 — ROVER FLOATS OUT OF THE BAR. Bryan: "WE WILL TAKE ROVER AND
+     THE WORDS 'TALK' OUTSIDE OF THE SEARCH BAR ENTIRELY - ROVER WILL FLOAT
+     IMMEDIATELY TO THE RIGHT OF SONNY/ROVER EGG... AND THEY WILL BOTH FLOAT."
+     He is right, and it is not only taste: with the bubble R and the bubble
+     word in the bar, the control ran ~126px wide and the input had to reserve
+     over 200px for it. On a 375px phone that leaves almost nothing to type
+     in. Lifting the control out gives the reserve back to the words, which is
+     the same ruling as the bigger reading surface — the words come first.
+     So the input reserves the EGG ONLY, and the control is seated just past
+     the bar's right edge, which is exactly where the egg is. */
+  /* 8/6 — AND BACK IN THE BAR, BY BRYAN'S SAME-NIGHT FINAL: "put that exact
+     floating thing in the search bar again. Done. go!" The reserve returns
+     with it: egg (60) + the bare R-and-word control (~125) + air. The typed
+     words yield the room; the words on the CONTROL are the feature tonight.
+       was: .searchbox #q{padding-right:60px}   (the float-out era)
+       was: .searchbox #q{padding-right:164px}  (the navy-pill era)  */
+  /* 8/8 — THE RESERVE TRACKS THE BUTTON, ALWAYS, and the button just grew.
+     Measured at four widths after the art went 34 -> 47/52: the placeholder
+     ran 14px UNDER the canvas on a phone and 30px under it on desktop. Text
+     under the art is a defect, never a trade. Desktop reserves
+     60 (egg) + 166 (canvas) + 8 (air) = 234; the phone canvas is smaller,
+     so it reserves 218 and keeps the extra 16px for typing.
+       was: .searchbox #q{padding-right:196px}  (the 34/40px-art era) */
+  .searchbox #q{padding-right:234px}
+  @media (max-width:700px){
+    .searchbox #q{padding-right:218px}
+  }
+  /* =====================================================================
+     REPEALED 2026-08-03 BY THE BLUE SONNY ORDER — BLUE IS NO LONGER THE
+     SPEAKING STATE. Blue is AWAKE AND WORKING; SPEAKING IS GOLD AND LARGE.
+     The live rules are in THE STATE BALL block near the top of this
+     stylesheet. If you find yourself writing `.speaking{background:blue}`
+     you have restored a repealed law.
+
+     Kept verbatim per THE NEVER-DELETE LAW. Full copy at
+     _superseded/2026-08-03-blue-sonny/index-BEFORE.html:
+
+       "BLUE SONNY IS SPEAKING ROVER — Bryan, 8/2/2026 late: 'THIS IS THE
+        FINAL ANSWER.' While Rover speaks aloud, the send ball wears the
+        filed BLUE SONNY sphere (assets/sonny_blue_128.png, the home-base
+        cut), bare — NO chrome R in the speaking state, his order. The gold
+        material returns the instant he stops. Supersedes the frozen-form
+        note and blue-only-on-X for this ONE state; shape never changes.
+        Full opacity even while aria-busy: a speaking ball is visibly
+        working, and dimming the state that carries the meaning would read
+        as a fault."
+
+         .searchbox button.speaking{background:url('assets/sonny_blue_128.png') center/cover no-repeat}
+         .searchbox button.speaking .rface{display:none}
+         .searchbox button.speaking[aria-busy="true"]{opacity:1}
+
+     TWO CLAUSES OF IT SURVIVED INTO THE NEW LAW, and they are worth saying
+     out loud so nobody re-argues them: the ball wears the sphere BARE with
+     no chrome R on it, and a speaking ball is never dimmed. Both are
+     carried by #sonnyball.speaking in the state-ball block above.
+     ===================================================================== */
+  .rovermic svg{width:18px;height:18px;fill:none;stroke:currentColor;
+    stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .rovermic:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+  /* The pressed state is NAVY-ON-GOLD, which is the Royal Standard's own
+     shape: navy is the object, gold is the point — the gold says "this is
+     the live one". Never gold-on-gold. */
+  .rovermic.on{background:var(--gold);border-color:var(--navy)}
+
+  /* A-6 · CONSENT. Florida is a TWO-PARTY CONSENT state (Fla. Stat.
+     934.03), so this sits ABOVE the mic before the first recording of any
+     session — visible, not buried behind a link. It is compliance copy and
+     is governed by its own rails first: it may be quiet, it may not be
+     shortened, hidden behind a tap, or dropped below legibility.
+     11px floor, ≥4.5:1 — #5C6178 on #fff measures 5.93:1. */
+  .voiceconsent{margin:0 0 8px;font-size:12px;line-height:1.55;
+    color:#5C6178;text-align:center;max-width:46ch;
+    margin-left:auto;margin-right:auto}
+
+  /* A-5 · the one teaching line, in the log the page already has. */
+  .chatlog .voicenote{margin:0 0 12px;font-size:13.5px;line-height:1.6;
+    color:#5C6178}
+
+  /* =====================================================================
+     🚨 RETIRED 2026-08-03: THE L-13 LISTENING RING -> replaced by THE
+     LISTENING PULSE ON SONNY HIMSELF (see STATE 3 in the state-ball block
+     near the top of this stylesheet). Verbatim copy of the whole page at
+     _superseded/2026-08-03-rover-brain-listening-pulse/index-BEFORE.html.
+     Reason: Bryan's ROVER-BRAIN ruling of 2026-08-03 — "SPEAKING AND
+     LISTENING SONNY WILL PULSATE" — describes COLOUR, SIZE and PULSE on
+     Sonny. It does not describe a ring. His new ruling wins.
+
+     BOTH ORDERS ARE ON THIS PAGE ON PURPOSE, BECAUSE THEY DISAGREE AND
+     BRYAN SHOULD SEE BOTH:
+       L-13, 8/1: "Use the navy listening ring around the ball only while
+         ROVER is actively listening... a temporary sibling status element,
+         not a repaint of the ball."
+       ROVER BRAIN, 8/3: "SPEAKING AND LISTENING SONNY WILL PULSATE."
+     A pulse IS a repaint of the ball, so the 8/3 ruling supersedes L-13's
+     "not a repaint" clause for the listening state. Nothing else about
+     L-13 is disturbed, and the ring is not the brand ring either way.
+
+     THE CSS BELOW IS DELIBERATELY LEFT LIVE AND UNTOUCHED. It is inert
+     because js/voice.js no longer creates a .listenring node — no selector
+     here can ever match, so it renders nothing and costs nothing. It stays
+     so that bringing the ring back is genuinely the ONE LINE the never-
+     delete law promises: set RING_RETIRED to false in js/voice.js and the
+     ring returns fully styled. Deleting these rules would have made that a
+     rebuild. If the ring ever does come back ALONGSIDE the pulse, re-read
+     the gold-on-blue note in clause 4 first — it is still correct.
+     ===================================================================== */
+  /* ---------------------------------------------------------------------
+     L-13 · THE LISTENING RING. Bryan, 8/1, verbatim:
+     "a temporary sibling status element, not a repaint of the ball and not
+     a return of the old public-facing ring. It must disappear when ROVER
+     is not listening."
+
+     · SIBLING, NEVER A REPAINT — its own node, absolutely positioned
+       around the ball. It never touches #sonnyball's art and never adds a
+       class that restyles the sphere. ROVER's form is FROZEN (A-3).
+     · NOT THE BRAND RING — royal-ai-social.md rules THE RING IS DEAD in
+       public, and that governs the BRAND RING DEVICE. This is a transient
+       audio-status indicator alive only while a mic is open. They must
+       never look alike: a plain stroke, and that is all. No bevel, no
+       glass, no keystone, no gradient.
+     · IT IS GOLD AS OF 2026-08-03, AND THAT INVERTS L-13 BY ITS OWN STATED
+       REASON. The clause it replaces, kept verbatim per the never-delete
+       law, read:
+           "NAVY ONLY. The ball underneath is gold, so the field already
+            satisfies the Royal Standard. Adding gold here would be Trap 1 —
+            gold on gold vanishes. NEVER ADD GOLD TO THIS RING."
+       Every word of that is still true OF A GOLD BALL. Under the Blue Sonny
+       order the ball underneath is BLUE — which is the Royal navy — so a
+       navy ring on it does not read as restraint, it disappears completely.
+       That was a defect the new law created, and this is the same-pass fix.
+       On a navy ball, gold is maximum contrast and Trap 1 is not in play.
+       THE RULE THAT ACTUALLY GOVERNS BOTH VERSIONS: the accent is always
+       the INVERSE of the ball. Gold ring on the blue ball, navy rim on the
+       gold ball, and never the reverse.
+       It stays a plain 2px stroke. Nothing else about L-13 changed.
+       js/voice.js wakes the ball before it ever opens the mic, so this ring
+       can never find itself sitting on gold.
+     · pointer-events:none so it can never steal the 44px tap (L-13/5).
+     · --lvl is written by voice.js from the live input level, so the ring
+       reacts to THEIR voice in real time — the market convention A-3 asks
+       us to match without copying anyone's orb.
+     --------------------------------------------------------------------- */
+  /* left/top/width/height are written by voice.js from the BALL'S OWN measured
+     rect when the mic opens — never hard-coded here, so the ring cannot drift
+     off-centre if a future pass re-lays-out the ask bar. */
+  .listenring{position:absolute;pointer-events:none;
+    border-radius:50%;box-sizing:border-box;
+    /* 2026-08-03, B-3. WAS: border:2px solid var(--navy) */
+    border:2px solid var(--gold);
+    transform:scale(calc(1.12 + (var(--lvl,0) * .28)));
+    opacity:calc(.55 + (var(--lvl,0) * .45));
+    transition:transform .08s linear,opacity .08s linear}
+  /* Reduced motion: hold a steady stroke. The indicator is NOT removed —
+     A-3 bans any state where audio is live with no on-screen sign. */
+  @media (prefers-reduced-motion:reduce){
+    .listenring{transform:scale(1.18);opacity:.85;transition:none}
+  }
+
+  /* =====================================================================
+     THE WORKING STATE  ·  2026-08-02, RELEASE ORDER G-2
+
+     WHAT IT WAS. front-door.css:176 is the whole of the old busy state:
+     `.searchbox button[aria-busy="true"]{opacity:.55;cursor:default}`.
+     Its own comment says "no spinner, nothing new on screen". A control
+     that greys to 55% and grows a default cursor is the exact visual
+     vocabulary of DISABLED, and for eight to eleven seconds that is the
+     only thing the orb said. Nobody read it as "working". They read it as
+     "this button is dead", which is how the page got its reputation.
+
+     WHAT IT IS NOW. The dim is lifted back to 88% — enough to read as
+     changed, not enough to read as switched off — and one gold arc turns
+     around the orb. That is the difference between a state and an event:
+     a dim is a state and could be permanent, a turning arc is an event
+     and is self-evidently mid-something.
+
+     IT IS NOT A PROGRESS BAR. The arc turns at a fixed rate and encodes
+     NOTHING about how far along the answer is, because nothing on this
+     page knows that. It says "still going" and it says nothing else. No
+     percentage, no fill, no estimate.
+
+     REDUCED MOTION gets the SAME RING, STANDING STILL — not nothing. A
+     visitor who has asked for no animation still has to be able to tell
+     that Rover is working, so the ring goes fully gold and holds. The
+     staged status line in the log carries the rest for both of them.
+
+     THE SPEED LAW IS UNTOUCHED: this is a ::after on a button that was
+     already there, it is not interactive, it is not fixed, and it stands
+     in front of nothing.
+     ===================================================================== */
+  .searchbox button[aria-busy="true"]{opacity:.88;cursor:progress}
+  .searchbox button[aria-busy="true"]::after{content:"";position:absolute;
+    inset:-6px;border-radius:50%;pointer-events:none;
+    border:2.5px solid rgba(37,48,105,.18);border-top-color:var(--gold);
+    animation:rai-working .95s linear infinite}
+  @keyframes rai-working{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){
+    .searchbox button[aria-busy="true"]::after{animation:none;border-color:var(--gold)}
+  }
+
+  /* ---------------------------------------------------------------------
+     B-3 AMENDMENT, 2026-08-03 — THE ARC SURVIVES, BUT IT WAITS.
+     The .88 dim above is now dead on this button: THE THINKING BREATH
+     replaces it with a live pulse (see the state-ball block). The arc
+     itself stays, because it is still the only thing on the page that says
+     "event, not state" — but it no longer arrives at the same instant the
+     blue starts breathing. Blue breathes alone for the first 2.5 seconds
+     and the gold arc appears only if the wait continues.
+
+     WHY. A fast answer should stay calm and a slow one should escalate.
+     Firing both signals at once spends the whole vocabulary on the very
+     first second and leaves nothing to say at eight. 2.5s is not a round
+     number picked for tidiness: it is the moment the second staged status
+     line paints ("Still working. Nothing has come back from the assistant
+     yet"), so the ball and the words escalate together. This is what
+     "extremely easy on the eyes" costs in engineering terms.
+
+     IT IS STILL NOT A PROGRESS BAR. It turns at a fixed rate and encodes
+     NOTHING about how far along the answer is. Two animations on one
+     pseudo-element: rai-working owns transform, rs-arcin owns opacity, so
+     neither can fight the other, and both are compositor-only.
+     REDUCED MOTION keeps the same delay and the same held gold ring. It
+     must not be left at opacity 0 by the animation:none above — that would
+     silently delete the working indicator for exactly the people who
+     already have the least motion to read.
+     --------------------------------------------------------------------- */
+  @keyframes rs-arcin{to{opacity:1}}
+  #sonnyball[aria-busy="true"]::after{opacity:0;
+    animation:rai-working .95s linear infinite,
+              rs-arcin .3s ease-out 2.5s forwards}
+  /* FINAL 1.1 OWNER LAW: no circular ring is an approved ROVER state
+     signal. Thinking is the small-blue dim/breath cue plus the live status
+     text, so the generic busy arc is suppressed on this one state ball. */
+  #sonnyball[aria-busy="true"]::after{content:none;animation:none;opacity:0}
+  @media (prefers-reduced-motion:reduce){
+    #sonnyball[aria-busy="true"]::after{
+      animation:rs-arcin 1ms linear 2.5s forwards;border-color:var(--gold)}
+  }
+  /* A SPEAKING BALL IS NOT A WORKING BALL. He can still be aria-busy while
+     he talks; a spinner around a talking 88px sphere is noise. */
+  #sonnyball.speaking[aria-busy="true"]::after{animation:none;opacity:0}
+
+  /* =====================================================================
+     BALL 1 · THE SEATING EXCEPTION  ·  2026-08-01, RAI.v7 PART TWO D-1
+     THE FIRST AND ONLY PER-BALL OVERRIDE ON THIS PAGE. Commented as an
+     exception, with the measurement, so no future pass "fixes" it back.
+
+     BRYAN: "this is our best logo that we have and so it really ticks me
+     off that it's too small within this bubble... it's the only one that
+     is off in terms of proportion size."
+
+     HE IS RIGHT, AND HERE IS THE MEASUREMENT, not an opinion. Rasterised
+     with Pillow, ink measured by alpha, all eight faces:
+
+       ball  file                     ink box     aspect  binds   ink H%   ink area%
+        1    mitre-lift-ai-v11.png         512x300     1.707   WIDTH   23.51%     5.85%
+        2    coin_chromeR.png        1311x1391    0.942   height  40.12%    13.29%
+        3    gold_R_agent.png         633x672     0.942   height  40.12%    13.15%
+        4    mark_builder_star.png    472x512     0.922   height  40.12%    16.13%
+        5    coin_heloc.png           861x852     1.011   width   39.70%    20.28%
+        6    coin_reverse.png         747x852     0.877   height  40.12%    17.97%
+        7    coin_goldX.png           512x488     1.049   width   38.24%    10.35%
+        8    matte_R.png              470x512     0.918   height  40.12%    12.26%
+
+     THE SEATING LAW caps the IMAGE BOX at 59% of .inner = 40.12% of the
+     ball on whichever axis binds. Every other mark is roughly square, so
+     HEIGHT binds and each renders the full 40.12% tall. The Ai lockup is
+     1.707:1, so WIDTH binds first and the mark renders only 23.51% tall -
+     41% shorter than its neighbours, on 5.85% ink area against their mean
+     of 14.77%. That is the entire defect. One ball out of eight, and the
+     one he cares most about.
+
+     ⚠ THE STANDING NOTE AT THE BALL-3 MARKUP SAYS "NEVER FIX A SMALL MARK
+     BY OVERRIDING THE SEATING LAW - crop ITS padding instead." That remedy
+     was correct for ball 3 and it DOES NOT APPLY HERE, measured: this
+     file's ink bbox is (0,106,512,406). It spans the full 512 width - x0=0,
+     x1=512 - so there is NO horizontal padding to crop, and width is the
+     axis that binds. Cropping to the ink box yields a 512x300 image, still
+     1.707:1, still binding on width, rendering the same 23.51%. Cropping
+     cannot fix this one. The override is the only instrument left.
+
+     🚨 THE ICON LAW WINS (PART 0 0.2): the 53 is byte-identical and FINAL.
+     THIS IS A SEATING FIX. mitre-lift-ai-v11.png is NOT re-exported, NOT
+     re-bevelled, NOT recoloured and NOT substituted for a squarer mark.
+     Only the CSS box it sits in changes.
+
+     THE NUMBER, and why it is 74.71% and not more. Target from the order:
+     ink 50.8% x 29.7% of the ball. .inner is 68% of the coin, so the image
+     box must be 50.8 / 68 = 74.71% of .inner. The image is square (512x512)
+     and its ink spans the full width, so 74.71% of .inner renders the ink
+     at 50.80% x 29.77% of the ball. Ink half-diagonal is then 29.44%
+     against the medallion's 34% radius - it fits, with margin comparable to
+     the other seven (their mean diagonal fill is 0.808 of the radius; this
+     lands at 0.866).
+
+     ✅ RULED BY BRYAN 2026-08-01 — CONTAINMENT GOVERNS. THIS IS SETTLED.
+     The order's two clauses did not agree: "match the mark's INK AREA to the
+     other seven" and "= 50.8% x 29.7%" are different targets. 50.8% x 29.7%
+     lifts ball 1 from 5.85% to 9.38% ink area - a 60% improvement, visually
+     level with its row - but the seven-ball MEAN is 14.77%, and truly
+     matching it needs a 63.74%-wide box whose ink corners fall OUTSIDE the
+     medallion. Raised for him; he ruled:
+
+       "Keep the shipped 50.80% width by 29.76% height. Do not increase it to
+        63.7% if that causes any part of the ball to leave the medallion.
+        Proper containment and seating govern over exact mathematical
+        ink-area matching."
+
+     🚫 SO: 74.71% IS FINAL. Do not enlarge ball 1 past the point where its
+     ink stays inside the medallion, and do not reopen this to chase 14.77%.
+     The ink-area clause is subordinate by his own ruling.
+     ===================================================================== */
+  .bubbles.g8 .bubble:first-child .coin .inner img{max-width:74.71%;max-height:74.71%}
+
+  /* =====================================================================
+     THE GAMES BALL  ·  LIVE 2026-07-31 (Bryan's direct ruling; this ball
+     only, see the markup comment below for the full note).
+     A ninth ball OUTSIDE the eight — the slate above is untouched, same
+     order, same art. Bubbly chrome R + G on the coin (an inline SVG set
+     in Montserrat on the filed navy glass gradient — a WORKING FILL
+     until Bryan rules the final mark), the words "Sonny vs. Rover" under
+     it. It is now a real <a>, opening sonny-vs-rover.html — the Coming
+     Soon <span> treatment and its no-hover-lift override are retired
+     (preserved at _superseded/2026-07-31-games-ball-coming-soon-
+     retired/); this ball now takes the family's normal live-bubble hover
+     behavior, same as the eight above it.
+     ===================================================================== */
+  .gamesrow{display:flex;justify-content:center;width:var(--fd-col);
+    margin-top:clamp(16px,3vh,26px)}
+  .gamesrow .coin{width:clamp(64px,16vw,84px)}
+  .gamesrow .label b{color:var(--navy)}
+
+  /* =====================================================================
+     THE BIG BUTTON — REMOVED 2026-08-01, RAI.v7/ROVER v3 PART TWO D-4.
+     Bryan's ruling: "completely remove the 'Download the Royal AI app'
+     button since that will be taken care of by the second bubble, which
+     will be led to royalmortgage.ai."
+
+     ⚠ THIS REVERSES HIS OWN 7/31 RULING (answer 16) — "all arrows point at
+     downloading." His hand, both times. Do not restore it.
+
+     THE PRECONDITION WAS CHECKED FIRST, per D-4/2: after this cut the
+     front door has ZERO paths to the App Store BY DESIGN, so ball 2's
+     destination must carry them. Verified on disk 2026-08-01 —
+     royalmortgage-ai\index.html:427 (App Store) and :442 (Play). Both live.
+
+     CSS block, markup, the Android href swap, and the already-moved
+     .underbtn paragraph are preserved verbatim per THE NEVER-DELETE LAW at
+     _superseded/2026-08-01-bigbtn-retired/index-bigbtn-fragment.html.
+     ===================================================================== */
+
+  /* =====================================================================
+     THE FOOTER, QUIETED  ·  2026-08-01, D-3
+     Bryan: "we also need to make the disclaimer smaller words at the bottom
+     because it gets too much attention."
+
+     🚨 THE RAIL, AND IT IS A REAL ONE. This footer carries the licensee
+     identification. It may be made smaller and quieter. It may NOT be
+     shortened, split, hidden behind a tap, or reduced below legibility.
+     FLOOR: 11px rendered, contrast >= 4.5:1 against its ground.
+
+     ⚠ THERE WAS ALMOST NO SIZE HEADROOM AND THAT IS WORTH KNOWING. The
+     footer was ALREADY at 11.5px (front-door.css:389) against an 11px
+     floor - 0.5px, 4.3%, of legal room. Size alone could not deliver what
+     he asked for. So the attention comes down by WEIGHT and LETTER-SPACING,
+     which the rail explicitly permits ("smaller and quieter"), and the
+     licensee sentence keeps every word.
+
+     MEASURED: --muted is #5C6178 on #FFFFFF = 5.93:1, comfortably over the
+     4.5:1 rail, and it is unchanged here - contrast was NOT spent to buy
+     quiet. The <b> runs drop 700 -> 600: still emphasis, no longer shouting.
+     ===================================================================== */
+  footer{font-size:11px;letter-spacing:.005em;padding-top:16px}
+  footer b,footer .brandword{font-weight:600}
+  footer .brandword em{font-weight:600}
+
+  /* =====================================================================
+     THE SONNY ORB IS RETIRED (7/31/2026). The fixed bottom-right gold ball
+     that lived here broke two v4 laws at once: nothing on this page may be
+     position:fixed, and never a duplicate ball — the Sonny/Rover state
+     ball in the ask bar (above) is now THE ball on this page, per THE
+     AWAKE/ASLEEP LAW. Its .sonnypad footer spacer retired with it.
+     Nothing was lost: the orb's one job was putting the visitor at the
+     bar, and the bar's own ball is the bar. Do not rebuild a floating
+     ball on this page.
+     ===================================================================== */
+  @media print{.gamesrow{display:none}} /* .outrow dropped 2026-07-31 (B-3); .bigbtn dropped 2026-08-01 (D-4) — neither element exists now */
+
+  /* =====================================================================
+     THE PHONE FLOOR, re-ruled 7/31/2026. front-door.css section 1 built
+     this page as one viewport, and the RESTING page still aims at that:
+     every vertical gap on a short screen is pulled in here rather than
+     letting the resting page grow. But THE CONVERSATION changes the
+     honest math — once a transcript exists the page MAY scroll (Bryan
+     accepted that shape in the answers: the emblem may scroll away; the
+     transcript's own box scrolls its history). So the one-viewport claim
+     is for the page at rest, not mid-conversation, and a page that
+     scrolls with a live transcript on it is correct, not a defect.
+     ===================================================================== */
+  @media (max-height:900px){
+    .markwrap{padding-top:clamp(16px,3.2vh,34px)}
+    .stage{padding-top:clamp(12px,2vh,22px);padding-bottom:10px}
+    .anchorline{margin-bottom:12px}
+    /* THE TYPE DOES NOT SHRINK AND THE LEADING BARELY MOVES. Every pixel
+       found on a short screen is found in WHITESPACE, never in the size of
+       the thing an older customer has to read. 16.5px/1.7 here against
+       16.5-19px/1.75 above. */
+    /* 8/5/2026 — 16.5 -> 17.5. This rule already refused to shrink the type
+       on a short screen; Bryan's readability ruling now says GROW it, and the
+       log scrolls, so the extra line costs nothing but a scroll. */
+    .chatlog{padding:13px 15px;font-size:17.5px;line-height:1.72;
+      max-height:min(46vh,420px)}
+    .bubbles{margin-top:clamp(16px,2.4vh,26px)}
+    .gamesrow{margin-top:clamp(12px,2vh,20px)}
+    /* .bigbtn short-screen rule dropped 2026-08-01 (D-4) — the element is gone. */
+    footer{padding:11px 16px 10px}
+  }
+
+
+  /* FINAL OWNER PUNCH LIST · 2026-08-03.
+     One physical sphere per state: no translucent blue layer over a second
+     ball, no glyph at rest, and no ring. Awake/working/thinking use the filed
+     blue sphere directly on the button. Listening and speaking use the same
+     large gold body; their motion distinguishes them. */
+  #sonnyball::before{content:none!important;display:none!important}
+  #sonnyball.awake{background:#111936 url('assets/sonny_blue_128.png') center/100% 100% no-repeat}
+  #sonnyball.listening,
+  #sonnyball.listening[aria-busy="true"],
+  #sonnyball.speaking,
+  #sonnyball.speaking[aria-busy="true"]{
+    background:radial-gradient(circle at 32% 26%,#FDF6E3 0%,#FAE0A5 22%,#E0B86C 45%,#B58B45 70%,#866736 100%)}
+
+  /* The voice control belongs to the Royal family without impersonating a
+     second Sonny. It is a compact navy wordmark control with the filed R,
+     not an off-the-shelf microphone pictogram. */
+  /* 8/5/2026 — THE BUBBLE R TAKES THE BUTTON, and the pill turns navy to
+     carry it. Bryan's ruling the same day: the Bubble R "is now ROVER's HOME
+     BASE FOR ALL ROVERS MOVING FORWARD," and this is where it ships first.
+     Two findings out of the sizing study (`_coin-cutter\talk-button\`, which
+     rasterises the master onto both grounds at five sizes and LOOKS at it,
+     per the Standard's measure-never-eyeball rule) decided this block:
+       1. THE GROUND MUST BE NAVY. On the old white pill the bowl's COUNTER —
+          the hole that makes an R an R — dissolves into the page, and the
+          gold cloud sits near 2.4:1. That is TRAP 1 and Rule 3 at once. On
+          navy the counter reads, both crown teeth read, and the gold is
+          doing exactly Rule 2's job: the one element carrying the meaning.
+       2. 20px WAS TOO SMALL. The old 20x22 slot loses both crown teeth and
+          turns the window Sunny into a smudge. 32 is the floor; 34 ships.
+     AND GOLD NOW MEANS LISTENING. The resting pill is navy on a dark navy
+     edge; the gold ring arrives only with .on, so gold marks the live state
+     instead of decorating the resting one. */
+  /* 8/6 — THE PILL IS GONE, BY BRYAN'S OWN ORDER, launch eve: "get rid of
+     the blue background behind ROVER... the look is supposed to be the same
+     as the buttons, as if he is floating in space." So the bubble R and the
+     bubble word sit BARE on the page, exactly like the Royal coins — no
+     plate, no border, no shadow. This composes with the filed ALIVE ROVER
+     law (white/transparent ground, non-negotiable, never re-raise
+     gold-on-white). The 44px hit target survives: the control's box is
+     unchanged, only its paint is gone. Prior pill, per the never-delete law:
+       was: gap:8px;border:1.5px solid #161E45;border-radius:22px;
+            background:linear-gradient(180deg,#2C3878 0%,#1E2857 100%);
+            box-shadow:0 4px 12px rgba(21,27,60,.18);font-size:12px;
+            font-weight:800;letter-spacing:.025em;color:#F7F3E8 */
+  /* 8/8 — ROVER GETS BIGGER IN THE BAR (Bryan, this build): "ROVER needs to
+     be bigger on the search bar. It's okay if he is close to the edges."
+     The 8/5 sizing study set 32px as the floor and shipped 34; that study
+     answered "how small can he go before the crown teeth and the counter
+     dissolve," which is a different question from how big he SHOULD be.
+     Mark 34 -> 47, word 22 -> 28. The control's own box grows 44 -> 52 so
+     the art is not clipped by its own container, and 52 still clears the
+     56px bar — he crowds the edges on purpose, which is the ruling. The
+     44px WCAG 2.5.8 floor is exceeded, not approached.
+     Prior numbers per the never-delete law:
+       was: .searchbox .rovermic{height:44px;min-height:44px}
+            .rovermic-mark{width:30px;height:34px}
+            .rovermic-label{height:22px}  ...label img{height:22px} */
+  .searchbox .rovermic{height:56px;min-height:56px;padding:0 14px 0 10px;
+    gap:9px;border:none;border-radius:28px;background:transparent;
+    box-shadow:none}
+  .rovermic-mark{width:41px;height:47px;display:grid;place-items:center;flex:none}
+  /* 8/5 — the label is a bubble WORD, not type. Height is locked so the
+     pill never resizes when Talk swaps to TEXT; width follows the art. */
+  .rovermic-label{display:grid;place-items:center;flex:none;height:28px}
+  .searchbox .rovermic .rovermic-label img{height:28px;width:auto;max-width:none;
+    object-fit:contain;display:block}
+  .searchbox .rovermic .rovermic-mark img{width:100%;height:100%;max-width:none;
+    max-height:none;object-fit:contain;display:block}
+  /* THE LIVE-MIC SIGN, without the pill: a soft gold halo on the art itself.
+     Prior ring, per the never-delete law:
+       was: .searchbox .rovermic.on{border-color:var(--gold);
+            box-shadow:0 0 0 3px rgba(203,162,96,.30),0 4px 14px rgba(21,27,60,.22)} */
+  .searchbox .rovermic.on img{
+    filter:drop-shadow(0 0 6px rgba(203,162,96,.55))}
+  /* 8/6 — THE ESCAPE HATCH SHRINKS (Bryan, with the mockup): in conversation
+     mode the label reads TEXT and renders VERY SMALL — "they should need to
+     try hard to press that button because we actually prefer that they stay
+     in conversing mode." The 44px hit box is untouched; only the art gets
+     quiet. TALK, the invitation, keeps the full 22px cut. */
+  .rovermic-label img{transition:height .3s ease-out}
+  /* 8/8 — rides the bigger art at the SAME RATIO (was 11 of 22, now 14 of
+     28). The escape hatch must stay proportionally quiet; scaling only the
+     invitation would have made TEXT read as the louder of the two. */
+  .searchbox .rovermic.voicemode .rovermic-label img{height:14px}
+
+  /* 8/7 — THE SEARCH-BAR MORPH IN THE SEAT (FINAL-BUILD items 1 + 2, and
+     Bryan's FINAL LAW for the morph). One canvas replaces the mark image and
+     the label image together; the panes ride inside it in the ruled order,
+     word · figure · egg, immediately left of golden Sonny.
+
+     THE PADDING GOES TO ZERO, and that is why the bar fits. The 14/10px
+     horizontal padding belonged to the navy pill, and Bryan retired the pill
+     on 8/6 ("as if he is floating in space"). Keeping it would have pushed
+     the canvas past the 136px the input's padding-right:196px reserves and
+     eaten into the question box on a phone. The 44px hit box is untouched —
+     it is the control's own height, not the art's.
+
+     The two rules above still apply to the FALLBACK control (an old cache, a
+     blocked script) and are deliberately left standing: .rovermic-label does
+     not exist when the morph mounts, so the 11px small-TEXT cut simply has
+     nothing to size. Per the core build order the final TEXT size rides its
+     own confirm; 11px is not restored here as a regression fix. */
+  .searchbox .rovermic.morphbar{padding:0;gap:0}
+  .rovermic-bar{display:block;line-height:0;font-size:0}
+  .rovermic-morph{display:block}
+  /* THE LIVE-MIC SIGN on the canvas, same gold halo the images wore. */
+  .searchbox .rovermic.on .rovermic-morph{
+    filter:drop-shadow(0 0 6px rgba(203,162,96,.55))}
+
+  /* 8/7 — NO PLATE, IN ANY STATE. Bryan, on sight of the live bar: "GET RID
+     OF THAT GOLD BACKGROUND THAT SHOULD NEVER BE THERE!" — and his earlier
+     blue was the same defect one state over. The 8/6 pill removal cleared
+     the RESTING background, but the pill era's STATE rules survived above:
+     `.searchbox .rovermic.on{background:var(--gold)}` painted a gold plate
+     the moment the mic went live, and the original navy-control rules could
+     paint the blue one. Higher specificity + later in the cascade, so every
+     state is transparent whenever the morph carries the control. The mic's
+     live sign is the gold halo on the ART (the rule just above), never a
+     plate — the morphs sit bare on the page, floating in space, exactly the
+     8/6 ruling. The old state rules stay untouched above: they are the
+     fallback control's record, per the never-delete law. */
+  .searchbox .rovermic.morphbar,
+  .searchbox .rovermic.morphbar.on,
+  .searchbox .rovermic.morphbar.voicemode,
+  .searchbox .rovermic.morphbar.voicemode.on{
+    background:transparent !important;border:none !important;box-shadow:none !important}
+
+  /* THE SEAT — 8/6, BRYAN'S FINAL WORD ON IT: "just go ahead and put that
+     exact floating thing in the search bar again. Done. go!" So the bare
+     R + word art (no pill, no bob — his same-day orders) sits back INSIDE
+     the bar, in the pre-float seat left of the egg. The outside-the-bar
+     seat is kept below per the never-delete law:
+       was: .searchbox .rovermic{left:calc(100% + 14px + var(--voice-shift,0px));
+            right:auto;transition:left .3s ease-out,top .3s ease-out}
+     AND THE SLIDE, INVERTED FOR THE IN-BAR SEAT. When TALK grows Sonny to
+     the Royal bubbles' own coin size, js/voice.js writes --voice-shift on
+     the root: exactly the extra radius the grown ball needs, (coin−ball)/2.
+     In the bar the control sits LEFT of the ball, so it slides LEFT that
+     far on the same 0.3s the growth takes — the R and the word keep the
+     same clear distance off the sun's edge, large or small. Symmetry by
+     construction. Inert at rest: property removed on exit, fallback 0px. */
+  .searchbox .rovermic{right:calc(60px + var(--voice-shift,0px));left:auto;
+    transition:right .3s ease-out}
+
+  /* 8/8 — ROVER 2 RULING: THE TEXT DOOR FLOATS AWAY. Once talk begins the
+     control glides out of the bar to the bottom-left corner of the SCREEN
+     — "located in a spot in which their finger would have to move
+     locations and go away from the sun to actually go and press that
+     button" (Bryan, 8/8, verbatim). position:fixed, so however far the
+     conversation scrolls the one way back to typing is never off screen:
+     the user must always know exactly what to press to fix the situation.
+     This rule is only the DESTINATION seat; the graceful ride there and
+     back is a JS FLIP in voice.js, and the locked morph module simply
+     rides inside the travelling control — no clause of THE MORPH LAW
+     touches where the control's box sits on the page. The 44px hit box
+     and the 8/6 small-TEXT art both ride along unchanged: small AND far
+     compose — "we actually prefer that they stay in conversing mode."
+     transform:none on purpose: the bar seat's translateY(-50%) centering
+     has no meaning against a fixed bottom edge. */
+  .searchbox .rovermic.textaway{
+    position:fixed;left:16px;right:auto;top:auto;
+    bottom:calc(16px + env(safe-area-inset-bottom,0px));
+    transform:none;z-index:80;margin:0}
+
+  /* 8/6 — THE BOB IS RETIRED, BY BRYAN'S OWN ORDER: "I did not mean to move
+     him around to float him. I mean that the look is supposed to be the same
+     as the buttons, as if he is floating in space." Floating is the LOOK —
+     bare art on the open page, like every Royal coin — not a motion. The
+     control now sits still, exactly like the buttons it must match. The
+     keyframes stay on file per the never-delete law; nothing points at them.
+       was: .searchbox .rovermic{animation:rv-float 4.2s ease-in-out infinite}
+            .searchbox .rovermic:hover{animation-play-state:paused} */
+  @keyframes rv-float{
+    0%,100%{transform:translateY(calc(-50% - 4px))}
+    50%    {transform:translateY(calc(-50% + 5px))}
+  }
+  .searchbox .rovermic{transform:translateY(-50%)}
+
+  /* RETIRED 8/6 — the under-bar phone seat rode with the outside-the-bar
+     float, and Bryan put the control back IN the bar the same night ("in
+     the search bar again. Done. go!"). In the bar there is nothing below
+     the bar to clear, so the 68px door push dies with the seat. Kept
+     verbatim per the never-delete law; nothing points at it.
+       was: @media (max-width:1180px){
+         @keyframes rv-float-under{
+           0%,100%{transform:translate(-50%,-4px)}
+           50%    {transform:translate(-50%,5px)}
+         }
+         .searchbox .rovermic{left:50%;right:auto;top:calc(100% + 12px);
+           animation:rv-float-under 4.2s ease-in-out infinite}
+         .bubbles,.bubbles.g8{margin-top:68px!important}
+       } */
+  @media (prefers-reduced-motion:reduce){
+    .searchbox .rovermic{animation:none;transform:translateY(-50%)}
+  }
+
+  /* ===================================================================
+     8/8/2026 · THE NARROW-PHONE SEAT — the control takes the room BELOW
+     the bar instead of taking it from the person typing.
+     ===================================================================
+     Bryan's two rulings collide at 375px and both of them are right:
+     8/6, the control goes back IN the bar ("put that exact floating thing
+     in the search bar again"); 8/8, ROVER gets BIGGER ("it's okay if he
+     is close to the edges").
+
+     MEASURED, not guessed, at four widths after the art went to 47px:
+     in-bar on a 375px phone the reserve has to grow to 218px, which
+     leaves 90px of typing space — about nine characters. That is the
+     exact failure recorded on 8/5 ("on a 375px phone that leaves almost
+     nothing to type in"), arriving from the other direction. A 90px
+     question box is a broken input, and the words come first.
+
+     So on narrow phones ONLY, the control keeps its full new size and
+     sits centred just under the bar, where there is room for it, and the
+     input gets its whole width back (reserve returns to the egg alone).
+     Wide screens are unaffected — there the big control and a 360px type
+     box both fit, which is why this is a media query and not a retreat.
+
+     🔑 THE TEXT DOOR STILL WINS. `.searchbox .rovermic.textaway` is
+     (0,3,0) against this rule's (0,2,0), so the moment TALK is pressed
+     the control still leaves for the bottom-left corner of the screen
+     from here exactly as it does from the in-bar seat. Ruling 3 intact.
+
+     The door bubbles are pushed down by the control's height so it never
+     lands on top of them — the same defect the 8/5 float hit, and the
+     same `!important` is required because `.bubbles.g8` is (0,2,0) AND
+     sits later in this file. */
+  /* 2026-09-07 — 430 -> 480. The phone seat (TALK under the bar, the short
+     padding-right) stopped at 430px and the iPhone Pro Max is 440 wide, so
+     those phones kept a 175px typing column beside two controls. Found in
+     review. The three seats (this one, and the two in THE SIMPLE FRONT DOOR
+     block) move together. */
+  @media (max-width:480px){
+    .searchbox .rovermic{left:50%;right:auto;top:calc(100% + 10px);
+      transform:translateX(-50%)}
+    .searchbox #q{padding-right:60px}
+    .bubbles,.bubbles.g8{margin-top:78px!important}
+  }
+
+
+
+  /* FINAL PHONE GRID FIT · 2026-08-03. Desktop keeps the measured 140px
+     tracks; compact screens keep the same four-seat order with fluid tracks,
+     so no Royal bubble is clipped outside the viewport. */
+  @media (max-width:700px){
+    .bubbles.g8{width:100%;grid-template-columns:repeat(4,minmax(0,1fr));
+      column-gap:clamp(8px,2vw,14px)}
+  }
+
+
+
+  /* FINAL PHONE GRID FIT V2 · 2026-08-03. Desktop keeps the measured 140px
+     tracks; compact screens keep the same four-seat order with fluid tracks,
+     so no Royal bubble is clipped outside the viewport. */
+  @media (max-width:700px){
+    .bubbles.g8{width:100%!important;
+      grid-template-columns:repeat(4,minmax(0,1fr))!important;
+      column-gap:clamp(8px,2vw,14px)!important}
+  }
+
+</style>
+
+
+<style>
+  /* THE FOLD-HOLDER. See the markup comment above .markwrap. */
+  .frontdoor{display:flex;flex-direction:column;flex:0 0 auto;
+    min-height:100vh;min-height:100dvh}
+
+  /* THE BAND. Full-bleed by being a direct child of the body column; the
+     body already carries overflow-x:hidden so it cannot cause a sideways
+     scrollbar. The hairline is the only thing that touches the white page
+     above it. */
+  .why{width:100%;background:var(--navy);color:#fff;
+    border-top:1px solid rgba(203,162,96,.34);
+    padding:clamp(54px,9vh,104px) 20px clamp(58px,10vh,112px)}
+  .whyinner{max-width:720px;margin:0 auto}
+
+  .why .whyhead{margin:0 0 clamp(22px,4vh,38px);color:#fff;font-weight:800;
+    font-size:clamp(26px,5vw,40px);line-height:1.15;letter-spacing:.005em}
+
+  .why p{margin:0 0 clamp(18px,2.6vh,26px);color:rgba(255,255,255,.92);
+    font-size:clamp(17px,2.7vw,19.5px);line-height:1.78}
+
+  /* THE CLAIM CARRIES THE GOLD. Every bold run in this section is a claim
+     from THE-WHY.md; the sentences after it are the explanation. */
+  .why p b{color:var(--gold);font-weight:800}
+
+  /* A link inside a gold claim keeps the claim's colour and takes the rule.
+     The Royal Journey is the only one today. */
+  .why p b a{color:inherit;text-decoration:underline;text-underline-offset:3px;
+    text-decoration-thickness:1.5px}
+  .why p b a:hover{color:#E3C892}
+  .why p b a:focus-visible{outline:3px solid var(--gold);outline-offset:3px;
+    border-radius:3px}
+
+  /* The opening thesis stands alone and stands bigger. */
+  .why .whyopen{font-size:clamp(21px,3.6vw,28px);line-height:1.34;
+    margin-bottom:clamp(16px,2.4vh,22px)}
+
+  /* THE PROOF LINE. Italic, quieter, and the only live thing in the band. */
+  .why .whyproof{font-style:italic;color:rgba(255,255,255,.78);
+    margin-top:clamp(28px,4.5vh,44px)}
+  .why .whyproof a{color:var(--gold);font-weight:700;text-decoration:underline;
+    text-underline-offset:3px;text-decoration-thickness:1.5px}
+  .why .whyproof a:hover{color:#E3C892}
+  .why .whyproof a:focus-visible{outline:3px solid var(--gold);outline-offset:3px;
+    border-radius:3px}
+
+  /* THE ANSWER. Same construction as the h1 tagline: the capital A is the
+     Royal glass A, the .sr span carries the whole line for screen readers,
+     and NO WHITESPACE sits between "THE" and the glyph — the left margin
+     below IS the word space, so the word can never wrap in half. */
+  .why .whyanswer{margin:clamp(30px,5vh,52px) 0 0;color:var(--gold);font-weight:800;
+    font-size:clamp(22px,4.4vw,34px);line-height:1.2;letter-spacing:.03em}
+  .why .whyanswer .glassAg{height:1.02em;width:auto;display:inline-block;
+    vertical-align:-.12em;margin:0 -.01em 0 .26em}
+
+  @media (max-width:520px){
+    .why{padding-left:18px;padding-right:18px}
+  }
+
+  /* Print: the sheets already force a white page, so the band follows. */
+  @media print{
+    .frontdoor{display:block;min-height:0}
+    .why{background:#fff !important;color:#000 !important;
+      border-top:1px solid #000}
+    .why p,.why .whyhead,.why p b,.why .whyanswer{color:#000 !important}
+    .why .whyproof a{color:#000 !important}
+  }
+</style>
+<style id="royal-standard-bottom-2026-09-09">
+/* THE ROYAL STANDARD BOTTOM - 2026-09-09. Self-contained on purpose.
+   The .wayhome and .wayhome.triangle rules live in an inline <style> on the six
+   front pages that already carry the triangle and in no stylesheet anywhere in
+   the family, so they are restated here rather than linked. The coin geometry is
+   restated too: royalmortgage.ai's royal-system.css defines .coin-inner and not
+   .coin .inner, and without the 59% cap a 773 KB chrome R renders at full size
+   inside a 108px seat. Rules copied verbatim from royalxpress.ai/index.html. */
+.wayhome{display:flex;justify-content:center;align-items:center;width:100%;margin:44px auto 32px;padding:0 20px}
+.wayhome .homebubble{display:inline-flex;align-items:center;justify-content:center;width:88px;text-decoration:none;-webkit-tap-highlight-color:transparent}
+.wayhome .homebubble .coin{width:88px;height:88px;max-width:88px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 32% 28%,#F6E4BC 0%,#E4C892 26%,#CBA260 58%,#A97F44 100%);
+  box-shadow:0 4px 14px rgba(37,48,105,.22),inset 0 2px 6px rgba(255,255,255,.55)}
+.wayhome .homebubble .coin .inner{width:78%;height:78%;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.wayhome .homebubble .coin .inner img{max-width:59%;max-height:59%;width:auto;height:auto;display:block;object-fit:contain}
+.wayhome .homebubble:focus-visible{outline:3px solid var(--gold,#CBA260);outline-offset:6px;border-radius:50%}
+.wayhome.triangle{display:grid;grid-template-columns:auto auto;column-gap:clamp(22px,7vw,48px);row-gap:clamp(12px,2vw,20px);justify-content:center;justify-items:center}
+.wayhome.triangle .tri-rover{grid-row:1;grid-column:1 / 3}
+.wayhome.triangle .tri-home {grid-row:2;grid-column:1}
+.wayhome.triangle .tri-r    {grid-row:2;grid-column:2}
+@media (max-width:400px){.wayhome.triangle{column-gap:18px;row-gap:10px;padding:0 12px}}
+
+/* SONNY AT THE APEX - 2026-09-09, Bryan: "as much as I love that R bubble, I just
+   feel like it's classier to just have that small Sonny lead you to the Sonny-only
+   page." Recipe copied verbatim from css/royal-endpoint.css, the retired endcap's
+   own .royal-endpoint-sonny, so this is the same ball the family already knew - the
+   gold orb and its gold-to-navy press, unchanged. He is the ball, so he wears no
+   coin ring: 44px against the two 88px coins below him, which is the size relation
+   the retired triangle shipped. */
+.wayhome .homebubble .royal-endpoint-sonny{display:block;width:44px;height:44px;border-radius:50%;
+  background:radial-gradient(circle at 32% 26%,#fdf6e3 0%,#f0d9a6 22%,#d5b271 45%,#ab854a 70%,#7d6238 100%);
+  box-shadow:0 5px 13px rgba(21,27,60,.23),inset 0 2px 5px rgba(255,255,255,.62),inset 0 -4px 9px rgba(90,66,30,.38);
+  transition:transform .18s ease,background .18s ease}
+.wayhome .homebubble:hover .royal-endpoint-sonny,
+.wayhome .homebubble:focus-visible .royal-endpoint-sonny,
+.wayhome .homebubble:active .royal-endpoint-sonny{transform:scale(1.06);
+  background:radial-gradient(circle at 32% 26%,#C6CAD8 0%,#6E78A6 10%,#394476 24%,#1C254F 48%,#171C3E 72%,#0E1024 100%)}
+@media (prefers-reduced-motion:reduce){.wayhome .homebubble .royal-endpoint-sonny{transition:none}
+  .wayhome .homebubble:hover .royal-endpoint-sonny{transform:none}}
+</style>
+</head>
+
+<body>
+
+
+
+  <div class="frontdoor">
+
+  <div class="markwrap">
+    <h1 class="sr">USA HELOC</h1>
+    <a class="brand" href="index.html" aria-label="USA HELOC &mdash; home">
+      <img class="brandmark" src="usa-brand/usa-heloc-lockup.png" alt="USA HELOC" width="2636" height="1444" decoding="async">
+    </a>
+  </div>
+
+  <div class="stage">
+
+
+    <div class="chat" id="chat">
+      <div class="chatlog" id="chatlog" role="log" aria-live="polite"></div>
+      <div class="chatrow">
+        <button class="newconvo" id="newconvo" type="button">New conversation</button>
+      </div>
+    </div>
+
+    <form class="searchbox" id="ask" autocomplete="off" data-own-handler>
+      <textarea id="q" rows="1" enterkeyhint="send" autocapitalize="sentences" spellcheck="true" placeholder="Try &ldquo;How does a HELOC work?&rdquo;" aria-label="Ask USA HELOC anything"></textarea>
+      <button type="submit" id="sonnyball" data-rover-state="rest" aria-label="Ask USA HELOC">
+      </button>
+    </form>
+
+    <style>
+      .bubble .soon{display:block;margin-top:.45rem;font:600 .62rem/1 Montserrat,system-ui,sans-serif;
+        letter-spacing:.12em;text-transform:uppercase;color:#8A8FA6;text-align:center}
+      .bubble[aria-disabled="true"]{cursor:default}
+    
+/* ============================================================================
+   THE CONTINUITY LAW — 2026-08-02, Bryan's ruling. It governs royalai.ai's
+   front door and its second layer, and it is the reason both are edited
+   together and measured against each other.
+
+     "when the users click on the RoyalaI.ai bubble on the top left, which is
+      bubble number 1A, from their standpoint, the only real difference from a
+      visual aspect is that there are now 16 total bubbles... the first two rows
+      must stay in the exact same place in terms of bubbles... The bubbles should
+      always be located in the same exact place, and the search bar should always
+      be located in the same exact place. Of course, the logo that says Royal
+      should always be in the same exact place."
+     "everything has to feel as if you are moving down the portal."
+
+   THE SHARED GEOMETRY. Every number below was MEASURED in the browser on
+   app.html — the approved standard — and is now stated identically on both
+   pages so neither can drift from the other:
+
+     mark ink top ............ 50px
+     mark ink bottom ......... 114px   (lockup height clamp(40,7.2vw,64))
+     slogan band ............. 136 -> 162   (fixed 26px box)
+     ask bar top ............. 242     = 128px below the mark, THE CONSTANT
+     ask bar bottom .......... 299
+     row 1 of coins .......... 319
+     row pitch ............... 149     (cell 131 + row-gap 18)
+     row 2 of coins .......... 468
+     columns ................. 4 x 140px, 20px gap, inside 620px, centred
+     column centres .......... 393 · 553 · 713 · 873  at a 1266px viewport
+
+   🚨 scrollbar-gutter IS LOAD-BEARING, NOT POLISH. The front door is short
+   enough to have no scrollbar and the sixteen-door layer is tall enough to
+   have one. Without a reserved gutter the whole page jumps 8px sideways the
+   instant you go a layer down — measured, and exactly the lurch this law
+   exists to kill. Never remove it.
+
+   🚫 AND THIS IS WHY NO PAGE MAY GROW A SENTENCE. Bryan: "This is why it's so
+   important we don't have additional verbiage... If we have words, then it
+   will mess up the structure." Any added line pushes the bar and every coin
+   below it and breaks the continuity on the page that gained it.
+   ========================================================================== */
+html{scrollbar-gutter:stable;overflow-y:scroll}
+/* overflow-y:scroll is the FALLBACK and it is not redundant: measured,
+   scrollbar-gutter alone did not reserve the track on the short page, so
+   the front door still reported a 1266px client width against the second
+   layer's 1251px. Forcing the track always-present makes both pages the
+   same width, which is what actually stops the sideways jump. */
+
+/* the lockup sits where the second layer's lockup sits */
+.markwrap{padding-top:50px}
+/* the slogan is a FIXED 26px box on both pages, so its own line-height can
+   never shift the bar or the coins beneath it */
+.stage{padding-top:22px}
+h1.tagline{height:26px;margin:0;display:flex;align-items:center;justify-content:center}
+/* 162 (slogan bottom) + 80 = 242, the ask bar. Same total the second layer
+   reaches with hero padding-bottom 38 + searchbox margin-top 42. */
+.searchbox{margin-top:80px}
+/* the coin grid: same width as the bar, same columns, same gaps, centred */
+.bubbles.g8{margin:20px auto 0;width:min(620px,100%);
+  grid-template-columns:repeat(4,140px);column-gap:20px;row-gap:18px;
+  justify-content:center}
+/* THE LABEL'S SEAT IS RESERVED EVEN THOUGH THE FRONT DOOR SHOWS NO LABELS.
+   His 8/1 ruling stands — no words under THESE eight balls — but the second
+   layer's cells are taller, and reserving that exact height here is the whole
+   reason the two pages' rows line up.
+
+   🔑 131 -> 149, CORRECTED 2026-08-03, AND THE OLD NUMBER WAS ARITHMETIC THAT
+   NEVER GOT MEASURED. This comment used to read "coin 108 + gap 8 + label 15
+   = 131", costing ONE line of label. The real seat is
+   .cell .label{min-height:2.5em} — TWO lines, because titles wrap: "HELOC
+   Equity Calculator", "Rentals & Investing", "First-Time Buyer". Measured in
+   the browser, a labelled cell on app.html is 149px, not 131.
+
+   So the front door was reserving 18px less than the layer it opens onto, and
+   row 2 sat 17px high the moment the sixteen doors got their words back.
+   MEASURED AFTER, both pages: row 1 = 319, row 2 = 485, pitch = 166.
+
+   🚫 DO NOT "SIMPLIFY" THIS BACK TO THE COIN HEIGHT. It looks like dead space
+   on a page with no labels. It is not — it is the second layer's label seat,
+   held open so nothing moves on the way down. Bryan: "everything has to feel
+   as if you are moving down the portal." */
+.bubbles.nolabel .bubble{min-height:149px;justify-content:flex-start}
+/* 8/6 — THE DOORS GIVE THE SUN HIS ROOM. While voice mode holds Large
+   ROVER 2 at coin size (108px against a 56px bar), his lower edge reaches
+   ~42px past the bar — straight into this grid's 20px seat. Nothing may
+   ever cover a door, so the whole slate rides down on the SAME
+   --voice-shift the in-bar control rides left: one number, three
+   readers, symmetry by construction. Inert at rest (fallback 0px, property
+   removed on exit), and it must sit AFTER the margin shorthand above or
+   the shorthand wins the cascade. */
+.bubbles.g8{margin-top:calc(20px + var(--voice-shift,0px));
+  transition:margin-top .3s ease-out}
+/* THE CODE NOTHIN G LOCKUPS UNDER THE BUBBLES, 2026-09-04. This row ships as
+   "nolabel" - the coins carry no words - so the two filed marks are added as
+   labels and the row's label-hiding is lifted just for them. */
+.bubbles.nolabel .label{display:block !important;margin-top:10px;text-align:center}
+.label .label-lockup{display:block;width:100%;max-width:104px;height:auto;margin:0 auto}
+</style>
+
+    <nav class="bubbles g8 nolabel" aria-label="Explore USA HELOC">
+
+      <a class="bubble" href="#ask" data-usa-ask=""
+         aria-label="Ask - type your question">
+        <div class="coin coin-awake-default"><div class="inner">
+          <svg class="usa-glyph" viewBox="0 0 100 100" aria-hidden="true"><path d="M14 16h72a8 8 0 0 1 8 8v40a8 8 0 0 1-8 8H50L30 90V72H14a8 8 0 0 1-8-8V24a8 8 0 0 1 8-8z"/><circle class="acc" cx="34" cy="44" r="5"/><circle class="acc" cx="50" cy="44" r="5"/><circle class="acc" cx="66" cy="44" r="5"/></svg>
+        </div></div>
+              <span class="label"><svg class="label-lockup" viewBox="0 0 1600 220" role="img" aria-label="ASK"><text class="t1" x="800" y="165" text-anchor="middle">ASK</text></svg></span>
+      </a>
+
+      <a class="bubble" href="#ask" data-usa-ask="How does a HELOC work?"
+         aria-label="How a HELOC works">
+        <div class="coin coin-awake-default"><div class="inner">
+          <svg class="usa-glyph" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8 6 46h12v44h24V62h16v28h24V46h12z"/><rect class="acc" x="44" y="62" width="12" height="28" rx="2"/></svg>
+        </div></div>
+              <span class="label"><svg class="label-lockup" viewBox="0 0 1600 220" role="img" aria-label="HOW IT WORKS"><text class="t1" x="800" y="165" text-anchor="middle">HOW IT WORKS</text></svg></span>
+      </a>
+
+      <a class="bubble" href="#ask" data-usa-ask="What does it take to qualify for a HELOC?"
+         aria-label="Do I qualify">
+        <div class="coin coin-awake-default"><div class="inner">
+          <svg class="usa-glyph" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 16 20v26c0 22 14 40 34 48 20-8 34-26 34-48V20z"/><path d="M32 50l12 12 24-26" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div></div>
+              <span class="label"><svg class="label-lockup" viewBox="0 0 1600 220" role="img" aria-label="DO I QUALIFY"><text class="t1" x="800" y="165" text-anchor="middle">DO I QUALIFY</text></svg></span>
+      </a>
+
+      <a class="bubble" href="#ask" data-usa-ask="Can I use a HELOC to pay for a home project?"
+         aria-label="Home projects">
+        <div class="coin coin-awake-default"><div class="inner">
+          <svg class="usa-glyph" viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="12" width="66" height="26" rx="8"/><path d="M84 24h8v34H58v32H42V50h42z"/></svg>
+        </div></div>
+              <span class="label"><svg class="label-lockup" viewBox="0 0 1600 220" role="img" aria-label="HOME PROJECTS"><text class="t1" x="800" y="165" text-anchor="middle">HOME PROJECTS</text></svg></span>
+      </a>
+
+      <a class="bubble" href="#ask" data-usa-ask="How much of my home equity could a HELOC reach?"
+         aria-label="My equity">
+        <div class="coin coin-awake-default"><div class="inner">
+          <svg class="usa-glyph" viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="28" rx="30" ry="12"/><path d="M20 30v12c0 7 13 12 30 12s30-5 30-12V30c0 7-13 12-30 12S20 37 20 30z"/><path d="M20 50v12c0 7 13 12 30 12s30-5 30-12V50c0 7-13 12-30 12S20 57 20 50z"/><path class="acc" d="M20 70v12c0 7 13 12 30 12s30-5 30-12V70c0 7-13 12-30 12S20 77 20 70z"/></svg>
+        </div></div>
+              <span class="label"><svg class="label-lockup" viewBox="0 0 1600 220" role="img" aria-label="MY EQUITY"><text class="t1" x="800" y="165" text-anchor="middle">MY EQUITY</text></svg></span>
+      </a>
+
+      <a class="bubble" href="#ask" data-usa-ask="How do HELOC rates and the monthly payment work?"
+         aria-label="Rates and payment">
+        <div class="coin coin-awake-default"><div class="inner">
+          <svg class="usa-glyph" viewBox="0 0 100 100" aria-hidden="true"><circle cx="30" cy="30" r="17"/><circle cx="30" cy="30" r="8" fill="#fff"/><circle class="acc" cx="70" cy="70" r="17"/><circle cx="70" cy="70" r="8" fill="#fff"/><rect x="44" y="4" width="12" height="92" rx="6" transform="rotate(35 50 50)"/></svg>
+        </div></div>
+              <span class="label"><svg class="label-lockup" viewBox="0 0 1600 220" role="img" aria-label="RATES &amp; PAYMENT"><text class="t1" x="800" y="165" text-anchor="middle">RATES &amp; PAYMENT</text></svg></span>
+      </a>
+
+      <a class="bubble" href="#ask" data-usa-ask="What should I ask before I open a HELOC?"
+         aria-label="Questions to ask">
+        <div class="coin coin-awake-default"><div class="inner">
+          <svg class="usa-glyph" viewBox="0 0 100 100" aria-hidden="true"><text x="50" y="80" text-anchor="middle" font-family="Montserrat,system-ui,sans-serif" font-weight="800" font-size="92">?</text></svg>
+        </div></div>
+              <span class="label"><svg class="label-lockup" viewBox="0 0 1600 220" role="img" aria-label="QUESTIONS"><text class="t1" x="800" y="165" text-anchor="middle">QUESTIONS</text></svg></span>
+      </a>
+
+      <a class="bubble" href="#contact"
+         aria-label="Contact - talk to a licensed loan officer">
+        <div class="coin coin-awake-default"><div class="inner">
+          <svg class="usa-glyph" viewBox="0 0 100 100" aria-hidden="true"><path d="M31 10c-5 0-9 3-11 7-7 12-2 29 11 45s31 27 44 27c5 0 9-3 11-7l4-8c2-3 1-7-2-9l-13-9c-3-2-7-1-9 1l-5 6C50 58 40 48 35 37l6-5c2-2 3-6 1-9l-9-12c-2-3-5-4-8-3z"/></svg>
+        </div></div>
+              <span class="label"><svg class="label-lockup" viewBox="0 0 1600 220" role="img" aria-label="CONTACT"><text class="t1" x="800" y="165" text-anchor="middle">CONTACT</text></svg></span>
+      </a>
+
+    </nav>
+
+
+
+  </div>
+  </div>
+
+  <section class="why" id="why" aria-labelledby="whyhead">
+    <div class="whyinner">
+
+      <h2 class="whyhead" id="whyhead">Our Why</h2>
+
+      <p class="whyopen"><b>Your home has been working for you. Now it can work with you.</b></p>
+
+      <p><b>USA HELOC does one thing.</b> Home equity lines of credit, explained in plain
+        English before anyone asks you to apply. What a HELOC is, what it costs, how the draw
+        and the repayment work, and whether it fits what you are trying to do.</p>
+
+      <p><b>Ask first. Apply later.</b> Type your question in the bar. You get a plain answer in
+        the open, and you are told when a question needs a licensed loan officer instead.</p>
+
+      <p><b>A human makes every decision.</b> A licensed loan officer walks you through it,
+        and a human underwriter reviews and signs every file. Answers here are information,
+        not an offer and not a decision.</p>
+
+      <p><b>No surprises is the whole product.</b> If a line of credit is not the right tool
+        for what you want to do, you will hear that here first.</p>
+
+      <p class="whyproof">The proof isn&rsquo;t a promise. It&rsquo;s running right now
+        &mdash; <a href="#ask" id="whyask">ask USA HELOC yourself</a>.</p>
+
+    </div>
+  </section>
+
+  <nav class="wayhome royal-home-only triangle" aria-label="Home, ask, and a loan officer">
+  <a class="homebubble tri-home" href="index.html" aria-label="Home &mdash; back to the start, USA HELOC">
+    <span class="coin"><span class="inner"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8 6 46h12v44h24V62h16v28h24V46h12z"/></svg></span></span>
+  </a>
+  <a class="homebubble tri-rover" href="#ask" data-usa-ask="" aria-label="Ask &mdash; back to the question bar">
+    <span class="royal-endpoint-sonny" aria-hidden="true"></span>
+  </a>
+  <a class="homebubble tri-r" href="#contact" aria-label="Talk to a licensed loan officer">
+    <span class="coin"><span class="inner"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M31 10c-5 0-9 3-11 7-7 12-2 29 11 45s31 27 44 27c5 0 9-3 11-7l4-8c2-3 1-7-2-9l-13-9c-3-2-7-1-9 1l-5 6C50 58 40 48 35 37l6-5c2-2 3-6 1-9l-9-12c-2-3-5-4-8-3z"/></svg></span></span>
+  </a>
+</nav>
+<footer id="contact">
+  <span class="royal-license-canon" style="display:block;margin:0 0 6px">USA HELOC LLC &middot; Equal Housing Opportunity</span>
+    <b class="brandword">USA <em>HELOC</em></b> &middot; USA HELOC LLC &middot;
+    <svg class="ehl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L1 10h3v12h16V10h3L12 2zm-4 12h8v2H8v-2zm0 3.5h8v2H8v-2z" fill="currentColor"/></svg>
+    <b>Equal Housing Opportunity</b> &middot; Not a commitment to lend. &copy; 2026 USA HELOC LLC.
+  <span class="usa-contact">Talk to a licensed loan officer. Contact details are being added.</span>
+  </footer>
+
+
+
+  <style id="simple-front-door-2026-09-07">
+    :root{--row-half:28px}
+    @media (max-width:390px){:root{--row-half:27px}}
+    /* THE BOX. One row at rest; it grows with the words to about six lines
+       and then scrolls inside itself. padding-right is NOT set here on
+       purpose: the .searchbox #q rules above still own it (room for the
+       TALK control and the ball at every width). */
+    .searchbox #q{display:block;width:100%;box-sizing:border-box;margin:0;
+      border:1.5px solid var(--line);border-radius:28px;background:var(--card);
+      padding-top:15px;padding-bottom:15px;padding-left:24px;
+      font-size:16.5px;line-height:1.4;font-family:inherit;font-weight:500;
+      color:var(--ink);box-shadow:0 10px 30px rgba(21,43,107,.10);outline:none;
+      resize:none;overflow-y:hidden;min-height:56px;max-height:196px;
+      -webkit-appearance:none;appearance:none;
+      transition:box-shadow .2s,border-color .2s}
+    .searchbox #q:focus{border-color:var(--gold);box-shadow:0 12px 34px rgba(202,162,95,.28)}
+    .searchbox #q::placeholder{color:var(--muted);opacity:1}
+    .searchbox #q:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+    /* at its tallest the box scrolls by wheel, keys and finger; a visible desktop
+       scrollbar would sit under the ball's seat (review finding) */
+    .searchbox #q{scrollbar-width:none}
+    .searchbox #q::-webkit-scrollbar{display:none}
+    @media (max-width:390px){
+      .searchbox #q{padding-top:14px;padding-bottom:14px;padding-left:18px;
+        font-size:16px;min-height:52px}
+    }
+    /* THE BALL AND THE TALK CONTROL RIDE THE LAST LINE of the box, not its
+       middle, so a tall box keeps them where the thumb expects them. Every
+       transform above still says translateY(-50%), so only `top` moves. */
+    .searchbox #sonnyball{top:calc(100% - var(--row-half))}
+    @media (min-width:481px){
+      .searchbox .rovermic{top:calc(100% - var(--row-half))}
+    }
+    /* THE TRANSCRIPT: the width of the stage, tall, hugging the bar. */
+    .chat{width:100%;max-width:none;margin:0 0 10px}
+    .chatlog{max-height:min(60vh,600px)}
+    .chat.open ~ .searchbox{margin-top:0}
+    /* THE SEAT UNDER THE MARK once the tagline is gone. Desktop keeps the
+       continuity law's 128px constant (stage 22 + 106 = the old 22 + 26 +
+       80); phones, where the two layers never matched to the pixel, sit
+       closer so the page does not open on a void. */
+    .searchbox{margin-top:106px}
+    @media (max-width:700px){
+      .stage{padding-left:10px;padding-right:10px}
+      .searchbox{margin-top:clamp(36px,7vh,64px)}
+      .chatlog{border-radius:16px;padding:14px 14px}
+    }
+    /* on a phone the sun grows past the ball's seat in voice mode; the box
+       gives the last line that much more room (--voice-shift is the same
+       number voice.js sets on the root while the sun is up; 0 at rest) */
+    @media (max-width:480px){
+      .searchbox #q{padding-right:calc(60px + 2 * var(--voice-shift,0px))}
+    }
+    /* ROVER AT YOUR FEET — the seat above the bar (see the markup note). The
+       landing: he drops in from a little above, settles with one bounce.
+       The transcript gives up some height while he is on the page so the
+       dog and the bar stay on screen together on a phone. */
+    .roverfetch{width:100%;display:flex;justify-content:center;align-items:flex-end;
+      margin:0;line-height:0;pointer-events:none;
+      max-height:0;overflow:visible;transition:max-height .32s ease-out,margin .32s ease-out}
+    .roverfetch.on{max-height:80px;margin:0 0 4px}
+    .roverfetch[hidden]{display:none}
+    /* the same height as the little Rover in the bar (its canvas is 47px on a
+       phone, 52px on a desktop) — Bryan: "the same size as the one we have
+       right now. We don't need to make them gigantic." */
+    .roverfetch img{height:54px;width:auto;display:block;
+      filter:drop-shadow(0 4px 6px rgba(21,27,60,.18))}
+    @media (max-width:700px){.roverfetch img{height:48px}}
+    .roverfetch.landing img{animation:rf-land .62s cubic-bezier(.22,.9,.24,1) 1 both}
+    .roverfetch.leaving img{animation:rf-leave .28s ease-in 1 both}
+    @keyframes rf-land{
+      0%  {opacity:0;transform:translateY(-10px) scale(.86)}
+      70% {opacity:1;transform:translateY(4px) scale(1.02)}
+      100%{opacity:1;transform:translateY(0) scale(1)}
+    }
+    @keyframes rf-leave{to{opacity:0;transform:translateY(8px) scale(.94)}}
+    /* (the transcript no longer gives up height: at this size he needs none) */
+    @media (prefers-reduced-motion:reduce){
+      .roverfetch{transition:none}
+      .roverfetch.landing img,.roverfetch.leaving img{animation:none}
+    }
+    /* SUNNY IS BRIGHT WHEN HE IS CONVERSING — 2026-09-08, Bryan: "when it's large
+       and Sunny, it should be conversing... really big, really bright, and really
+       Sunny when it's conversing. When it's not listening, or when it's dead,
+       null, or void, it should be closed in gold." So the big sun never dims
+       while the conversation is open (the 8/8 frozen beat kept the size and
+       lost the shine) and he wears a halo. Closed = the small gold ball. */
+    #sonnyball.listening,#sonnyball.speaking,
+    #sonnyball.listening[aria-busy="true"],#sonnyball.speaking[aria-busy="true"],
+    #sonnyball.speaking.rs-frozen,#sonnyball.speaking.rs-frozen[aria-busy="true"]{
+      filter:none;
+      /* the shadow scales with the sun (about 2.4x here), so it is authored small */
+      box-shadow:0 0 0 3px rgba(203,162,96,.16),0 0 22px 7px rgba(253,230,165,.58)}
+    @media (prefers-reduced-motion:reduce){
+      #sonnyball.listening,#sonnyball.speaking,
+      #sonnyball.listening[aria-busy="true"],#sonnyball.speaking[aria-busy="true"],
+      #sonnyball.speaking.rs-frozen,#sonnyball.speaking.rs-frozen[aria-busy="true"]{
+        box-shadow:0 0 0 3px rgba(203,162,96,.16)}
+    }
+    /* the voice consent paragraph never sits above the bar again —
+       js/voice.js says its one line inside the transcript instead */
+    .voiceconsent{display:none!important}
+  </style>
+  <script src="js/engine-client.js"></script>
+  <script src="_royal-system/front-door/front-door.js"></script>
+
+  <script>
+  /* =====================================================================
+     THE CONVERSATION — the whole behaviour of Rover's one home.
+     Rebuilt 7/31/2026 to THE ROVER BUILD v4, Part 4A. Inline on purpose:
+     the guarantees below are easier to audit sitting next to the markup
+     they govern than in a shared file other doors also load.
+
+     THE PROMISES THIS CODE KEEPS:
+
+       · NOTHING SPEAKS ON ARRIVAL. The box opens only on the visitor's
+         own tap (bar focus, ball tap, or a carried ?q=). A restored
+         transcript paints statically, per the visitor's own choice.
+       · AGGRESSIVE FIRST SPEAKER, AFTER THE TAP. Once tapped AND awake,
+         Rover opens with a direct question — walk-on energy — never
+         before the tap, and never while asleep.
+       · THE 400ms PROMISE SURVIVES, AND IT NO LONGER STOPS THERE.
+         2026-08-02, RELEASE ORDER G. From the moment a question is sent,
+         something true is on screen within 400 milliseconds — and then it
+         KEEPS being true out loud at roughly 2.5s, 5.5s and 9s, in the one
+         live region, until the answer lands or the attempt is over. The
+         old build painted one static line at 400ms and then changed
+         nothing for the remaining eight to eleven seconds, which is
+         indistinguishable from a page that has died; that single-shot line
+         is what G replaced. Still no percentage, no progress bar, no
+         invented step count, and nothing that claims to know how much
+         longer it will be. The gold arc on the orb says "happening" and
+         says nothing else. See STAGES below for the copy and the timing
+         argument for each of the four.
+       · A FAILURE NEVER COSTS THE VISITOR THEIR WORDS. G-3. The question
+         is held, a real retry control appears under any non-answer, and a
+         send that arrives while Rover is already working is answered out
+         loud instead of being silently eaten. The input is never disabled.
+       · THE CONNECT BUDGET IS THE CLIENT'S OWN. The 7/29 override that
+         forced connectMs down to 400 is DROPPED on purpose — the client
+         default (3000ms) applies, so a slow-but-live engine can still
+         take the screen back: the first real token always wins.
+       · THE BLUE SONNY ORDER (8/3/2026), which amends rule -1000. The ball
+         turns BLUE on the visitor's own first engagement — a finger on the
+         ball, focus in the box, or any submit — and stays awake for the
+         visit. BLUE MEANS "SONNY IS ENGAGED", NOT "THE ENGINE IS HEALTHY",
+         and the two proof-of-life call sites (/health 200 on the tap, the
+         first streamed token) still call wakeUp() but are no longer the
+         only ones. WAS, and this is the honesty clause the ruling gave up:
+         "THE AWAKE/ASLEEP LAW (rule -1000). The ball wears the chrome R
+          only once the engine has PROVEN it can answer — a /health 200 on
+          the tap, or the first streamed token. Never awake when the API
+          isn't ready."
+         The truth about a dead engine now lives entirely in the two bullets
+         below and in the staged status copy. They must keep firing.
+       · ZERO-NETWORK HONESTY. With the engine meta empty — the truth
+         today — nothing is fetched and nothing can time out; a question
+         gets a canned response PAIRED with the honest sentence that
+         nothing typed left this device.
+       · THE TWENTY CANNED RESPONSES (5B) cover every can't-answer state
+         on this surface: no endpoint, engine unreachable, engine error,
+         empty stream. Warm, a light joke, the ROYAL FASTPASS door — never the
+         corporate-lawyer line. The engine carries its own set
+         server-side; this set is the surface's, so it is never mute.
+       · RETENTION IS CUSTOMER CHOICE. After the first exchange Rover
+         asks how long to keep the conversation: Never / Never-but-
+         synopsis (marked honestly as coming soon) / 24 hours /
+         Indefinitely. localStorage key rai.chat.v1, this browser only.
+         THE WALL stands: no ledger and no server ever sees a message
+         body from here.
+     ===================================================================== */
+  (function () {
+    'use strict';
+
+    var form  = document.getElementById('ask');
+    var input = document.getElementById('q');
+    var ball  = document.getElementById('sonnyball');
+    var chat  = document.getElementById('chat');
+    var log   = document.getElementById('chatlog');
+    var nc    = document.getElementById('newconvo');
+    if (!form || !input || !chat || !log) return;
+
+    /* A FEW HUNDRED MILLISECONDS, and this number is still the ruling. */
+    var DEADLINE = 400;
+    var KEY = 'rai.chat.v1';
+    /* 2026-09-07 — RETENTION RETIRED, Bryan's ruling: "we aren't keeping any
+       conversations yet either, so we need to get rid of that part that says,
+       'Do you want us to remember your conversations?'" Nothing is asked and
+       nothing is stored: load() clears the key and returns null, askRetention()
+       returns at once. The four-choice machinery below stays as the record. */
+    var RETENTION_RETIRED = true;
+    var DAY = 86400000;
+
+    /* 2026-09-08 — NO MORE WORDS. Bryan: "we are way too wordy at the end. There
+       should never be additional words... People have a hard time reading the
+       sentence that the dog is saying out loud." Every routine line the page
+       used to print is gone; a failure gets a few plain words; the wait shows
+       three dots. The old strings stay beside the new ones as the record. */
+    var PATIENT = '\u2026';   /* was: 'Please be patient as we assess incoming data.' */
+
+    /* =====================================================================
+       THE STAGED STATUS  ·  2026-08-02, RELEASE ORDER G-1
+
+       WHAT WAS ACTUALLY WRONG, and it was not the absence of a spinner.
+       PATIENT painted ONCE, at 400ms, into the log — and then NOTHING on
+       this page changed again for the remaining eight to eleven seconds.
+       Five things moved on submit (input cleared, question painted,
+       .haslog set, aria-busy on the ball, that one line) and all five
+       happened inside the first 400ms. After that the page was, by every
+       observable measure, finished. A visitor cannot tell a page that is
+       working from a page that has stopped if the page never says anything
+       twice, and they did not: they concluded it was broken, and they were
+       reading the evidence correctly.
+
+       WHAT THESE FOUR ARE. Four sentences, each one TRUE OF THE MOMENT IT
+       IS SPOKEN, replacing each other in the one live region. What they
+       deliberately are NOT:
+         · not a percentage — nothing here knows one
+         · not a progress bar — there is no measurable progress to bar
+         · not a step count — "step 2 of 4" would be invented
+         · not an estimate — the code has no idea how long is left, and
+           saying so is what stage 3 and stage 4 actually do
+       The only claim any of them makes about the future is stage 4's
+       "your question is saved", and that one is true because G-3 below
+       now genuinely saves it.
+
+       WHY THESE FOUR TIMES. 400ms is the standing ruling and it survives
+       untouched. 2.5s is inside the client's 3,000ms connect deadline, so
+       "nothing has come back" is precisely right and nothing stronger can
+       honestly be said. 5.5s is PAST that deadline — a failed connect has
+       already aborted and been answered by then, so if this line is on
+       screen the wait is real and unusual, and it says so. 9s sits inside
+       the measured 8 to 11 second window where people were giving up.
+
+       ROVER'S REGISTER: warm, plain, no em dashes, no emoji, no jargon.
+
+       PATIENT ITSELF IS NOT RETIRED — probe() still uses it for the health
+       check on focus, which is a different and much shorter wait.
+       ===================================================================== */
+    var STAGES = [
+      [400, '\u2026'],
+      [2500, '\u2026'],
+      [5500, '\u2026'],
+      [9000, '\u2026'],
+      /* ADDED 2026-08-02 after verification measured the gap. The staged copy
+         used to stop at 9s while the client's own silence budget runs to 45s,
+         so the live region went quiet for up to 36 more seconds on the worst
+         wait there is — the exact silence this whole section exists to end,
+         reappearing at the worst possible moment. These two carry it to the
+         edge of the budget and stay honest: neither invents progress, and the
+         last one says out loud that this is close to as long as Rover waits. */
+      [16000, '\u2026'],
+      [26000, '\u2026']
+    ];
+    /* 2026-09-08 review — the first stage had escaped the purge; it read: Rover has your question and is reaching the assistant now. */
+    /* 2026-09-08 — NO MORE WORDS: the staged lines above were, in order: Rover has your question and is reaching the assistant now. | Still working. Nothing has come back from the assistant yet. | This one is taking longer than most. Rover is still waiting on the first words. | Still waiting, and still here. Your question is saved, so nothing is lost either way. | This is a long one. Rover has not given up, and neither has your question. | Rover is close to the end of how long he waits. If nothing comes back, you will get a way to send it again. */
+
+    /* THE ACKNOWLEDGED TAP — G-4. Said out loud when someone sends while
+       Rover is already working. It promises NO queue, because there is no
+       queue: it says the send did not happen, says where their words are,
+       and says what to do. A tap that is silently eaten is the single
+       behaviour that convinced people this page was dead. */
+    var BUSYTAP = 'Still answering. Send it again when the answer stops.';   /* was: 'Rover is still answering the last one, so that did not send. Your words are safe in the box, and you can send them again the moment he finishes.' */
+
+    var OFFLINE = 'USA HELOC is not answering right now. Nothing was sent.';   /* was: 'The live assistant is not answering yet, so nothing you typed left this device.' */
+    var FINE    = 'Answers are information, not advice or an offer.';
+    /* 8/8/2026 — THE SHORTEST INTRO EVER, Bryan's ruling this build.
+       "ROVER is way too mouthy right now... he should literally have the
+       shortest intro response ever." And: "If people don't ask who ROVER
+       is, we should assume they already know his job."
+
+       TWO DEFECTS IN ONE LINE, both closed here:
+       1. IT WAS A CAPABILITY TOUR — 178 characters introducing himself,
+          naming the company, naming three product categories and doing a
+          bit, before the visitor had asked for any of it. A good dog does
+          not volunteer what the owner did not ask about.
+       2. IT ENDED IN A QUESTION, which the NO-QUESTIONS LAW (shipped the
+          same day on rover-2 @e626546) retired everywhere. Rover asking
+          the opening question is the exact pattern that loses the user.
+
+       74 characters. Says who he is once, says what he is for once, and
+       then gets out of the way. If they ask what he does, he is happy to
+       tell them — that path is the brain's and it is untouched.
+       Prior line per the never-delete law:
+         was: 'Well hey there. I\'m Rover, the Royal Mortgage AI assistant
+               — put me in, coach. What\'s the one question about buying,
+               refinancing, or home equity you\'ve been wanting to ask?' */
+    var OPENER  = 'Ask anything about home equity lines of credit.';
+    /* Same law, same day: a stated request, not a question. The retention
+       choice still has to be made by the visitor — open doors are
+       STATEMENTS now, and this is one.
+         was: 'Before we go any further — how long would you like to keep
+               our conversations?' */
+    var KEEPQ   = 'One thing first. Tell me how long you want me to keep our conversations.';
+    var SOON    = 'Noted. One honest heads-up: synopsis delivery is coming soon. Until it ships, nothing is kept.';
+
+    /* THE 20 CANNED RESPONSES — 5B. Warm, a light joke, and the default
+       door. Never stuffy, never lawyer-ish. The banned
+       phrasing ("you'll have to speak to a licensed loan officer in your
+       state...") never appears here.
+       2026-10-02: THE DOOR MOVED (the 9/12 "Completely out" ruling, now on
+       the site side too). Each joke is kept; only the ending changed, to the
+       default door: download the ROYAL Ai app (App Store or Google Play) and
+       tap ROYAL FASTPASS. canned() fills {DOOR} through insideNativeApp(),
+       so a visitor already inside the native app is told only to tap ROYAL
+       FASTPASS. The old endings are not kept here on purpose. */
+    var CANNED = [
+      'That one did not come back. Give it another try in a minute, or {DOOR} if this is not helping.',
+      'No answer reached me on that one. Ask again in a minute, and you can always {DOOR}.',
+      'That question deserves a better answer than I have right now. Try again shortly, or {DOOR}.'
+    ];
+    /* THE SHELL GATE for the door line, 2026-10-02. The same test as
+       appShell() in js/engine-client.js, which keeps it private: framed by
+       the app's webview AND an iPhone, iPad or Android device. A top-level
+       visit is never inside the app, and anything unexpected falls back to
+       the web door, the same direction the engine client fails. */
+    var DOOR_WEB = 'reach a licensed USA HELOC loan officer through the contact line at the bottom of this page';
+    var DOOR_APP = 'reach a licensed USA HELOC loan officer through the contact line at the bottom of this page';
+    var nativeCache = null;
+    function insideNativeApp() {
+      if (nativeCache !== null) return nativeCache;
+      var out = false;
+      try {
+        var framed = false;
+        try { framed = (window.self !== window.top); } catch (e) { framed = true; }
+        var ua = (navigator && navigator.userAgent) || '';
+        var ios = /iPad|iPhone|iPod/.test(ua) ||
+          (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+        var android = /Android/.test(ua);
+        out = framed && (ios || android);
+      } catch (e) { out = false; }
+      nativeCache = out;
+      return out;
+    }
+    var cIdx = Math.floor(Math.random() * CANNED.length);
+    function canned() {
+      var t = CANNED[cIdx % CANNED.length]; cIdx++;
+      return t.replace('{DOOR}', insideNativeApp() ? DOOR_APP : DOOR_WEB);
+    }
+
+    function endpoint() {
+      var m = document.querySelector('meta[name="royal-engine"]');
+      return ((m && m.getAttribute('content')) || '').trim();
+    }
+    var ep = endpoint();
+    var client = window.RoyalEngineClient || null;
+    var live = !!(ep && client);
+    /* connectMs deliberately NOT set — the client default applies. */
+    if (live) client.configure({ endpoint: ep });
+
+    var awake = false, probing = false, opened = false;
+    var openerSaid = false, keepAsked = false, busy = false;
+
+    /* ---- retention storage: rai.chat.v1, this browser only ---- */
+    function load() {
+      if (RETENTION_RETIRED) {
+        try { localStorage.removeItem(KEY); } catch (e) {}
+        return null;
+      }
+      try {
+        var raw = localStorage.getItem(KEY);
+        if (!raw) return null;
+        var s = JSON.parse(raw);
+        if (s && s.keep === '24h' && s.msgs && (Date.now() - (s.at || 0) > DAY)) {
+          s.msgs = null;   /* expired: the choice survives, the words do not */
+          localStorage.setItem(KEY, JSON.stringify({ keep: s.keep }));
+        }
+        if (s && s.keep !== '24h' && s.keep !== 'forever') s.msgs = null;
+        return s;
+      } catch (e) { return null; }
+    }
+    var store = load();
+    var msgs = (store && store.msgs) ? store.msgs.slice() : [];
+    function save() {
+      try {
+        if (!store || !store.keep) return;
+        var out = { keep: store.keep };
+        if (store.keep === '24h' || store.keep === 'forever') { out.at = Date.now(); out.msgs = msgs; }
+        localStorage.setItem(KEY, JSON.stringify(out));
+      } catch (e) { /* private mode: the conversation still works, it just will not survive */ }
+    }
+
+    /* ---- rendering ---- */
+    function line(cls, text) {
+      var d = document.createElement('div');
+      d.className = 'msg ' + cls;
+      d.textContent = text;
+      log.appendChild(d);
+      log.scrollTop = log.scrollHeight;
+      return d;
+    }
+    function say(role, text) {
+      var d = line(role === 'u' ? 'u' : 'a', text);
+      msgs.push({ r: role, t: text });
+      save();
+      return d;
+    }
+    function note(text) { return line('note', text); }
+
+  /* THE CALCULATOR BUTTON - 2026-09-05, Bryan (ruling 1D). ROVER's affordability and payment
+     answers end "Tap the gold calculator button below." This is that button: it appears only
+     when the answer names the calculator, right under the answer, and opens the family's
+     calculator library. Gold pill, navy words - both brand colours, gold on the way in. */
+  var CALC_URL = 'https://royalheloc.ai/calculators.html';
+  /* THE PURCHASE CALCULATOR - 2026-09-27, Bryan: "when people are adding or asking about
+     purchases, we lead them to the purchase calculator... whenever they ask about how to
+     calculate a payment. ROVER will send them to that calculator." The brain now names the
+     door on its done event (info.calculator, THE CALCULATOR DOOR in doctrine.js): 'purchase'
+     opens this site's purchase-calculator.html (What I Can Afford, layer 3); 'equity' - a
+     HELOC, home-equity, cash-out, refinance or reverse thread - keeps CALC_URL above. No key
+     (an older brain, or a turn that did not end on the calculator line) keeps CALC_URL too,
+     so this file changes nothing until the brain that sends the key is live. */
+  var CALC_DOORS = {
+    purchase: { href: 'purchase-calculator.html', label: 'Open the purchase calculator' },
+    equity: { href: CALC_URL, label: 'Open the calculator' }
+  };
+  function calcHint(el, door) {
+    if (!el || !el.parentNode) return;
+    var old = el.parentNode.querySelector('.calcgo-wrap');
+    if (old) old.parentNode.removeChild(old);
+    if (!/calculator/i.test(el.textContent || '')) return;
+    if (!document.getElementById('calcgo-css')) {
+      var st = document.createElement('style'); st.id = 'calcgo-css';
+      st.textContent = '.calcgo-wrap{text-align:center;margin:12px 0 4px}' +
+        '.calcgo{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 22px;min-height:44px;border-radius:22px;text-decoration:none;color:#253069;font:700 14px/1 Montserrat,system-ui,sans-serif;letter-spacing:.02em;' +
+        'background:radial-gradient(circle at 32% 24%,#fdf6e3 0%,#f5e2b4 16%,#e2c283 34%,#cba260 52%,#a5814a 70%,#7d6238 86%,#6a5330 100%);' +
+        'box-shadow:0 6px 14px rgba(21,27,60,.2),inset 0 2px 5px rgba(255,255,255,.62),inset 0 -4px 9px rgba(90,66,30,.38);-webkit-tap-highlight-color:transparent}' +
+        '.calcgo:focus-visible{outline:3px solid #CBA260;outline-offset:3px}';
+      document.head.appendChild(st);
+    }
+    var wrap = document.createElement('div'); wrap.className = 'calcgo-wrap';
+    var pick = (door && CALC_DOORS.hasOwnProperty(door)) ? CALC_DOORS[door] : CALC_DOORS.equity;
+    var a = document.createElement('a'); a.className = 'calcgo'; a.href = pick.href; a.textContent = pick.label;
+    wrap.appendChild(a);
+    el.insertAdjacentElement('afterend', wrap);
+  }
+
+    function openChat() {
+      if (!opened) { opened = true; chat.classList.add('open'); }
+      if (msgs.length || log.childNodes.length) chat.classList.add('haslog');
+    }
+    /* ---------------------------------------------------------------------
+       0 -> 1 · THE ORIGINAL TRANSFORMATION  ·  2026-08-03, THE BLUE SONNY ORDER
+
+       Bryan: "When the user's finger touches original Sonny, AKA Rover Egg,
+       Sonny will turn from its gold to its blue sphere automatically. Sonny
+       will never be able to function unless he is blue."
+
+       WHAT USED TO CALL THIS, and it is worth knowing because it is the one
+       real thing the ruling gave up: wakeUp() used to fire ONLY on proof —
+       a /health 200 or the first streamed token — so the awake state could
+       not lie. Blue now arrives on the visitor's own touch, before any
+       proof exists. Both PROOF call sites are still here and still call it;
+       they are simply no longer the only ones.
+
+       THE THREE ENGAGEMENTS. Bryan named the finger on the ball. The other
+       two are here because he ALSO ruled that Sonny cannot function unless
+       he is blue, and a visitor who tabs into the box and hits Enter is
+       functioning. `pointerdown`, not click, so the blue starts on the way
+       down — the transformation should feel like it answers the finger.
+       Once set, .awake is never removed: he does not go back to sleep
+       inside a visit (B-1), so small gold means one thing only.
+
+       window.RoverWake is the seam js/voice.js uses. Opening the mic is
+       functioning too, and it also keeps the gold listening ring off a gold
+       ball, which would be Trap 1. Guarded on both sides: no voice, no
+       problem; no page script, voice falls back to the class directly.
+       --------------------------------------------------------------------- */
+    var ROVER_LABELS = {
+      rest: 'Ask USA HELOC',
+      awake: 'Ready. Ask USA HELOC',
+      thinking: 'Thinking',
+      listening: 'Listening',
+      speaking: 'Speaking',
+      /* 8/5/2026 — VOICE MODE. Bryan ruled that Rover stays the large gold
+         sun for the whole spoken conversation, not just while audio plays.
+         The GOLD comes from the .speaking CLASS, which stays on the ball for
+         the session; this label is the honest half of that, because between
+         turns he is present and listening for you, not speaking. Never let
+         the label say "speaking" while he is silent. */
+      voice: 'Voice mode'
+    };
+    function setRoverState(state) {
+      if (!ball || !ROVER_LABELS[state]) return;
+      ball.setAttribute('data-rover-state', state);
+      ball.setAttribute('aria-label', ROVER_LABELS[state]);
+    }
+    try { window.RoverSetState = setRoverState; } catch (e) {}
+
+    function wakeUp() {
+      /* 2026-09-08 review — voice mode strips .awake for the gold sun; the wake that
+         follows TEXT must put the blue back even though this page already woke
+         once. The flag now guards only the first-time work below.
+           was: if (awake) return; */
+      if (ball) { ball.classList.add('awake'); }
+      if (awake) { setRoverState('awake'); return; }
+      awake = true;
+      if (ball) {
+        ball.classList.add('awake');
+        setRoverState('awake');
+      }
+    }
+    try { window.RoverWake = wakeUp; } catch (e) {}
+    /* 2026-09-07 — the same seam for the transcript. js/voice.js writes its own
+       lines into #chatlog ("Opening the microphone.", the speech-service note);
+       on a fresh page the panel is still display:none, so without this a first
+       press of TALK said its disclosure into a hidden box. Found in review. */
+    try { window.RoverOpenChat = openChat; } catch (e) {}
+    if (ball) ball.addEventListener('pointerdown', wakeUp);
+    input.addEventListener('focus', wakeUp);
+    form.addEventListener('submit', wakeUp);
+
+    /* ---- the working state on the ball. One place, so the busy flag and
+       the thing the visitor can see can never disagree. G-2 ---- */
+    function setBusy(on) {
+      if (!ball) return;
+      if (on) {
+        ball.setAttribute('aria-busy', 'true');
+        if (!ball.classList.contains('listening') && !ball.classList.contains('speaking')) {
+          setRoverState('thinking');
+        }
+      } else {
+        ball.removeAttribute('aria-busy');
+        if (!ball.classList.contains('listening') && !ball.classList.contains('speaking')) {
+          setRoverState('awake');
+        }
+      }
+      /* NOT aria-disabled and NOT the disabled attribute, on purpose: the
+         orb is still a real control the whole time (pressing it while busy
+         is answered out loud by BUSYTAP), and marking it disabled would be
+         a lie to a screen reader as well as a dead end for a keyboard. */
+    }
+
+    /* =====================================================================
+       THE STATUS RUNNER — one line in the log that keeps telling the truth
+       until the answer arrives or the attempt is over. G-1
+
+       WHY THE NODE IS REPLACED AND NOT REWRITTEN. #chatlog is role="log"
+       with aria-live="polite". A log's reliable announcement channel is
+       ADDITIONS; rewriting the text of a node already inside it is the
+       kind of mutation screen readers disagree about, and a status nobody
+       hears is the accessibility version of the bug being fixed here. So
+       each stage removes the previous line and appends a fresh one. It is
+       always the last child, so on screen it reads as one line that
+       changes, and in the ear it reads as four things said in turn.
+       ===================================================================== */
+    var activeStatus = null;
+    function statusRunner() {
+      var el = null, last = '', timers = [], stopped = false;
+      function paint(text) {
+        if (stopped) return;
+        last = text;
+        if (el) el.remove();
+        el = line('status', text);
+      }
+      for (var i = 0; i < STAGES.length; i++) (function (s) {
+        timers.push(setTimeout(function () { paint(s[1]); }, s[0]));
+      })(STAGES[i]);
+      var runner = {
+        /* Used when the log is wiped mid-flight (New conversation). Without
+           it the visitor would clear the screen and be back to staring at
+           a page with nothing on it while a request was still running —
+           the exact defect, re-created by a different route. */
+        remount: function () { if (!stopped && last) { el = line('status', last); } },
+        stop: function () {
+          stopped = true;
+          for (var j = 0; j < timers.length; j++) clearTimeout(timers[j]);
+          timers = [];
+          if (el) { el.remove(); el = null; }
+          if (activeStatus === runner) activeStatus = null;
+        }
+      };
+      activeStatus = runner;
+      return runner;
+    }
+
+    /* =====================================================================
+       THE RETRY PATH — G-3
+
+       WHAT WAS MISSING. Several of the twenty canned lines end with some
+       form of "try me again in a minute". There was nothing to press, and
+       worse, nothing left to press it WITH: the visitor's question was
+       wiped off the input the instant they hit send, so "again" meant
+       retyping the whole thing from memory. The lines were writing cheques
+       the page could not cash.
+
+       WHAT THIS IS. The question is held in lastQ and this row is the
+       control those lines were promising. Two buttons, because they are
+       two different needs: send the same words again, or get the words
+       back so they can be changed first.
+
+       NO DOUBLE SUBMIT. The row removes itself on the first click, and
+       both handlers check `busy` before doing anything, so a double tap or
+       a stale row left over from an earlier failure cannot put two asks in
+       flight at once.
+       ===================================================================== */
+    function offerRetry(q, canResend) {
+      var row = document.createElement('div');
+      row.className = 'msg retry';
+      function btn(label, fn) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = label;
+        b.addEventListener('click', function () {
+          /* ACKNOWLEDGED, NEVER EATEN — and rate limited, 2026-08-02 G-4
+             verification pass. This site called note(BUSYTAP) directly and
+             so bypassed the busyToldAt gate the submit path uses. MEASURED:
+             a stale retry row left over from an earlier failure is still in
+             the log while a NEW ask is in flight, and two taps on it painted
+             two identical lines into the live region, which a screen reader
+             reads out twice. Same gate as the submit path now, so the whole
+             page has exactly one rule for how often this is said. */
+          if (busy) { tellBusy(); return; }
+          /* FOCUS IS MOVED BEFORE THE ROW GOES, AND THIS IS NOT THEORETICAL:
+             measured in the browser, removing the element that owns the
+             focused button sends document.activeElement to <body>. On a
+             keyboard that means the next Tab restarts from the top of the
+             page; on a screen reader the cursor silently drops out of the
+             conversation it was just in. The ask bar is the right landing
+             spot either way, and it is never disabled, so it can always
+             take the focus. */
+          input.focus();
+          row.remove();
+          fn();
+        });
+        row.appendChild(b);
+        return b;
+      }
+      if (canResend) btn('Send that question again', function () { send(q); });
+      btn('Put it back in the box', function () {
+        input.value = q;
+        /* 2026-09-07 — a hand-set value fires no input event; the growing box
+           must be told, or a long question comes back as one clipped row */
+        if (typeof window.RoverFitBox === 'function') window.RoverFitBox();
+        input.focus();
+        try { input.setSelectionRange(q.length, q.length); } catch (e) {}
+      });
+      log.appendChild(row);
+      log.scrollTop = log.scrollHeight;
+      return row;
+    }
+
+    /* ---- restore, per the visitor's own retention choice ---- */
+    if (msgs.length) {
+      opened = true;
+      chat.classList.add('open');
+      chat.classList.add('haslog');
+      for (var i = 0; i < msgs.length; i++) line(msgs[i].r === 'u' ? 'u' : 'a', msgs[i].t);
+    }
+
+    /* ---- the delayed formation: prove the engine before the R forms ---- */
+    function probe() {
+      if (!live || awake || probing) return;
+      probing = true;
+      var status = note(PATIENT);
+      var ctrl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
+      var t = setTimeout(function () { if (ctrl) ctrl.abort(); }, 4000);
+      fetch(ep + '/health', { method: 'GET', signal: ctrl ? ctrl.signal : undefined })
+        .then(function (res) {
+          clearTimeout(t); probing = false; status.remove();
+          if (res && res.ok) {
+            wakeUp();
+            if (!openerSaid && !msgs.length) { openerSaid = true; say('a', OPENER); }
+          }
+        })
+        .catch(function () { clearTimeout(t); probing = false; status.remove(); });
+    }
+
+    /* ---- the retention four-choice ask, once, after the first exchange ---- */
+    function askRetention() {
+      if (RETENTION_RETIRED) return;   /* 2026-09-07 — see RETENTION_RETIRED */
+      if (keepAsked || (store && store.keep)) return;
+      keepAsked = true;
+      line('a', KEEPQ);   /* the question itself is never persisted */
+      var row = document.createElement('div');
+      row.className = 'msg keep';
+      var opts = [['never', 'Never'],
+                  ['synopsis', 'Never, but send me a synopsis'],
+                  ['24h', '24 hours'],
+                  ['forever', 'Indefinitely']];
+      for (var i = 0; i < opts.length; i++) (function (pair) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = pair[1];
+        /* input.focus() added 2026-08-02 alongside G-3. Same measured
+           defect as the retry row: removing the row that holds the focused
+           button drops document.activeElement to <body>. One line, no
+           change to the choice itself or to what is stored. */
+        b.addEventListener('click', function () { input.focus(); row.remove(); choose(pair[0]); });
+        row.appendChild(b);
+      })(opts[i]);
+      log.appendChild(row);
+      log.scrollTop = log.scrollHeight;
+    }
+    function choose(c) {
+      store = store || {};
+      store.keep = c;
+      save();
+      if (c === 'synopsis') note(SOON);
+      else if (c === '24h') note('Kept on this device for 24 hours. "New conversation" clears it any time.');
+      else if (c === 'forever') note('Kept on this device until you clear it. "New conversation" clears it any time.');
+      else note('Nothing kept. This conversation lives on this screen only.');
+    }
+
+    /* ---- the quiet New conversation control ---- */
+    if (nc) nc.addEventListener('click', function () {
+      msgs = [];
+      log.textContent = '';
+      save();
+      if (client && client.reset) client.reset();
+      openerSaid = false;
+      chat.classList.remove('haslog');
+      /* 2026-08-02, G-1. Clearing the log while an ask is still in flight
+         used to leave an empty box and a dimmed ball with nothing running
+         on screen — the frozen page, rebuilt by a different route. The
+         request is still real, so the status goes back up with it. */
+      if (busy && activeStatus) { chat.classList.add('haslog'); activeStatus.remount(); }
+      input.focus();
+    });
+
+    /* ---- the box appears on the tap, never before ---- */
+    input.addEventListener('focus', function () { openChat(); probe(); });
+
+    /* ---- the ask ----
+       Lifted out of the submit listener on 2026-08-02 (G-3) so the retry
+       button can travel the IDENTICAL path a first send does. One code
+       path, one set of guarantees; a retry that went down a shortcut would
+       be the next thing to drift. */
+    var lastQ = '';        /* the visitor's words, kept so a failure never costs them */
+    var busyToldAt = 0;    /* rate limit on BUSYTAP so a flurry of taps is not a flurry of lines */
+
+    /* ONE PLACE THAT SAYS IT, so the gate cannot be forgotten at a second
+       call site (it was, on the retry row — see G-4 note in offerRetry).
+       Hoisted `var`, so the retry row's handler can reach it. */
+    function tellBusy() {
+      var now = Date.now();
+      if (now - busyToldAt > 2500) { busyToldAt = now; note(BUSYTAP); }
+    }
+
+    function send(q) {
+      if (busy) return;    /* belt: callers all check first, this is braces */
+      openChat();
+      lastQ = q;
+      say('u', q);
+      chat.classList.add('haslog');
+
+      /* ---- NO ENDPOINT: instant, honest, zero network calls ---- */
+      if (!live) {
+        say('a', canned());
+        note(OFFLINE);
+        /* canResend is FALSE here and that is deliberate. With no endpoint
+           configured there is nothing to send TO: a "send it again" button
+           would re-run the same zero-network canned line and pretend to
+           have tried. The words come back to the box instead, which is the
+           half of the retry that is real on this path. */
+        offerRetry(q, false);
+        askRetention();
+        return;
+      }
+
+      /* ---- ENDPOINT SET: stream, with the 400ms truth deadline ---- */
+      busy = true;
+      setBusy(true);
+      var status = statusRunner();   /* replaces the single-shot PATIENT line */
+      var streamed = false;
+      var reply = null;
+
+      /* NO WORLD, AND THAT IS THE FIX — 2026-08-02.
+         This read `{ world: 'royal-ai' }`. There is no such world. The
+         sixteen doors are the sixteen doors, safeWorld() rejects anything
+         else by design, and so every ask from the ONE page the native app
+         frames landed in the engine's byWorld.none bucket. Bryan had no
+         read at all on what app users ask.
+         The tempting fix was a seventeenth world. That would have been
+         wrong twice: STAGES is the doctrine's own journey enum, so a made
+         up key immediately starts feeding a fake stage, a fake voice and
+         fake remaining-door maths into a compliance-critical prompt; and
+         the front door genuinely HAS no world, because nobody standing
+         here has walked through a door yet. Sending nothing is the honest
+         answer to "which door", and the ask is now attributable by SHELL
+         instead, which js/engine-client.js adds to every request and the
+         ledger counts. See its appShell() note. */
+      client.ask(q, {}, {
+        onDelta: function (t) {
+          if (!streamed) {
+            streamed = true;
+            status.stop();          /* real words beat any status, always */
+            wakeUp();               /* the engine answered: provably awake */
+            reply = line('a', '');
+          }
+          /* 2026-09-08 — APPEND, never reset. `textContent +=` rebuilt the whole
+             node and threw away the word spans js/voice.js had laid down for a
+             chunk already being spoken. was: reply.textContent += t; */
+          reply.appendChild(document.createTextNode(t));
+          log.scrollTop = log.scrollHeight;
+        },
+        onDone: function (info) {
+          busy = false;
+          setBusy(false);
+          status.stop();
+          if (streamed) {
+            msgs.push({ r: 'a', t: reply.textContent });
+            save();
+            /* 2026-09-08 — NO MORE WORDS: the boilerplate line after every answer
+               is gone; only a follow-up the engine itself wrote is shown.
+                 was: note((info && info.followup) || FINE); */
+            if (info && info.followup) note(info.followup);
+            calcHint(reply, info && info.calculator);
+            /* AN INTERRUPTED STREAM IS NOT A SUCCESS. The client already
+               says so out loud in the transcript (its CUTOFF line, appended
+               through onDelta so a caller that renders from the stream
+               cannot miss it) and flags it as info.truncated. This is what
+               lets the visitor act on it instead of just reading about it. */
+            if (info && info.truncated) offerRetry(q, true);
+          } else {
+            /* unreachable, erroring, or an empty stream: a canned
+               response — never a lawyer line, never a blank panel */
+            say('a', canned());
+            offerRetry(q, true);
+          }
+          askRetention();
+        }
+      });
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var q = input.value.trim();
+      openChat();
+      if (!q) { probe(); input.focus(); return; }
+
+      /* THE SWALLOWED TAP — G-4, and this one line is most of the reason
+         people said the page was broken. It used to read `if (busy) return;`
+         which ate the tap in perfect silence: no line, no sound, no change
+         of any kind, on a page that had already been motionless for several
+         seconds. Now the tap is ANSWERED, the typed words are LEFT IN THE
+         BOX rather than cleared, and focus goes back where they were
+         typing. The input is never disabled at any point in the wait, so
+         "keep it usable" is literally true and the acknowledgement is only
+         about the one thing that genuinely cannot happen twice at once. */
+      if (busy) {
+        tellBusy();
+        input.focus();
+        return;
+      }
+
+      input.value = '';
+      send(q);
+    });
+
+    /* ---- THE ?q= RECEIVER (7/31). app.html forwards its old ?q= links
+       here so a cached bookmark never dead-ends. ---- */
+    var carried = null;
+    /* New app and portal handoffs use sessionStorage so a question — which may
+       contain borrower details — never becomes URL, browser-history, server-log,
+       or ordinary analytics data. ?q= remains only as a legacy receiver. */
+    try {
+      carried = sessionStorage.getItem('rai.pending-question.v1');
+      if (carried) sessionStorage.removeItem('rai.pending-question.v1');
+    } catch (err) {}
+    if (!carried) try { carried = new URLSearchParams(location.search).get('q'); } catch (err) {}
+    if (carried) {
+      try { history.replaceState(null, '', location.pathname + location.hash); } catch (err) {}
+      openChat();
+      input.value = carried;
+      if (typeof window.RoverFitBox === 'function') window.RoverFitBox();   /* 2026-09-07 */
+      if (typeof form.requestSubmit === 'function') form.requestSubmit();
+      else form.dispatchEvent(new Event('submit', { cancelable: true }));
+    }
+
+    /* ---- THE ANDROID SWAP IS GONE — 2026-08-01, D-4. It existed only to
+       swap #bigbtn's href to the Play listing on Android, and #bigbtn was
+       removed tonight, so this block had nothing left to address. Its
+       #outbtn half had already gone with the OUT button on 2026-07-31 (B-3).
+       Preserved verbatim, with both store URLs, at
+       _superseded/2026-08-01-bigbtn-retired/index-bigbtn-fragment.html.
+       THE STORE LINKS THEMSELVES ARE NOT LOST: royalmortgage.ai carries
+       both, and ball 2 is the path to it. This page now makes ZERO
+       platform-sniffing decisions, which is one less thing to be wrong
+       about inside a webview. ---- */
+  })();
+  </script>
+  <script>
+  (function () {
+    var form = document.getElementById('ask');
+    var q = document.getElementById('q');
+    if (!form || !q) return;
+    var still = !!(window.matchMedia &&
+                   window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    function fit() {
+      /* empty = the resting row, whatever the placeholder does when it wraps */
+      if (!q.value) { q.style.height = ''; q.style.overflowY = 'hidden'; return; }
+      var max = parseFloat(getComputedStyle(q).maxHeight) || 196;
+      q.style.height = 'auto';
+      var h = q.scrollHeight + 3;            /* + the two borders (border-box) */
+      if (h > max) { h = max; q.style.overflowY = 'auto'; }
+      else { q.style.overflowY = 'hidden'; }
+      q.style.height = h + 'px';
+    }
+    q.addEventListener('input', fit);
+    q.addEventListener('focus', fit);
+    window.addEventListener('resize', fit);
+    /* after the page's own submit handler has emptied the box */
+    form.addEventListener('submit', function () { setTimeout(fit, 0); });
+    q.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' || e.shiftKey || e.isComposing) return;
+      e.preventDefault();
+      if (typeof form.requestSubmit === 'function') form.requestSubmit();
+      else form.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+    });
+    function target() {
+      var box = form.getBoundingClientRect();
+      var vh = (window.visualViewport && window.visualViewport.height) || window.innerHeight;
+      var y = window.pageYOffset + box.top - (vh - box.height) / 2;
+      return Math.max(0, y);
+    }
+    function scrollToBar() {
+      try { window.scrollTo({ top: target(), behavior: still ? 'auto' : 'smooth' }); }
+      catch (e) { window.scrollTo(0, target()); }
+    }
+    function bringBar() {
+      /* focus FIRST and synchronously — the keyboard rule above */
+      try { q.focus({ preventScroll: true }); } catch (e) { try { q.focus(); } catch (e2) {} }
+      try { q.setSelectionRange(q.value.length, q.value.length); } catch (e) {}
+      scrollToBar();
+      /* the keyboard changes the viewport a beat later; land it again — and
+         this second pass SNAPS, because a smooth scroll that was interrupted,
+         throttled or never painted would otherwise leave the cursor blinking
+         in a box the reader cannot see */
+      setTimeout(function () {
+        if (Math.abs(window.pageYOffset - target()) > 24) window.scrollTo(0, target());
+      }, still ? 0 : 450);
+    }
+    window.RoverFitBox = fit;
+    window.RoverBringBar = bringBar;
+    fit();
+  })();
+  </script>
+
+<script defer src="usa-brand/usa-brand.js"></script><!-- USA HELOC: topic coins + the preview chip; voice.js (ROVER) removed -->
+<script>
+(function(){
+  var link = document.getElementById('whyask');
+  if (!link) return;
+
+  function target(bar){
+    var box = bar.getBoundingClientRect();
+    var y = window.pageYOffset + box.top - (window.innerHeight - box.height) / 2;
+    return Math.max(0, y);
+  }
+
+  link.addEventListener('click', function(e){
+    var bar = document.getElementById('ask');
+    var q   = document.getElementById('q');
+    if (!bar || !q) return;                    /* let the href do its job */
+    e.preventDefault();
+    /* 2026-09-07 — the shared helper focuses INSIDE this tap (so the iPhone
+       keyboard opens) and then travels; the older travel-then-focus path
+       below stays as the fallback when the helper is absent. */
+    if (typeof window.RoverBringBar === 'function') { window.RoverBringBar(); return; }
+
+    var still = !!(window.matchMedia &&
+                   window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    var want  = target(bar);
+
+    try { window.scrollTo({top: want, behavior: still ? 'auto' : 'smooth'}); }
+    catch (_) { window.scrollTo(0, want); }
+
+    /* Focus after the travel, or the browser yanks the scroll to the field
+       and the smooth run is thrown away. THE SNAP FALLBACK below is not
+       belt-and-braces: a smooth scroll that is interrupted, throttled or
+       simply unsupported would otherwise leave the cursor blinking in a
+       field the reader cannot see. If the travel did not land, we land it. */
+    window.setTimeout(function(){
+      if (Math.abs(window.pageYOffset - target(bar)) > 24) window.scrollTo(0, target(bar));
+      try { q.focus({preventScroll: true}); } catch (_) { q.focus(); }
+    }, still ? 0 : 420);
+  });
+})();
+</script>
+</body>
+</html>

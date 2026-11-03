@@ -1,0 +1,124 @@
+/* ============================================================================
+   USA HELOC - THE BRAND FILE  (v2, 2026-11-01: the real brand from Alysia's package)
+   ----------------------------------------------------------------------------
+   Two colours, taken from the logo concept PDF Bryan sent 11/1 (brand-colours.json):
+     navy  #152B6B   the letters
+     red   #BC1F2B   the three stripes in the U
+   White paper, Montserrat (the Royal system font) until the brand guide names a face.
+   Loads AFTER royal-system.css and front-door.css and re-points their tokens, so the
+   front-door mechanism (ask bar, the eight coins, the triangle) runs untouched.
+   No ROVER on this site: the ask ball is a plain ball that moves between the two colours.
+   ========================================================================== */
+
+:root{
+  --usa-navy:#152B6B;
+  --usa-navy-deep:#0E1E4F;
+  --usa-navy-ink:#0A1638;
+  --usa-navy-lift:#4D64A6;       /* the highlight stop of the navy ball */
+  --usa-red:#BC1F2B;
+  --usa-red-deep:#8E1620;
+  --usa-red-lift:#E05A64;        /* the highlight stop of the red ball */
+  --usa-paper:#FFFFFF;
+  --usa-card-tint:#F6F7FA;
+  --usa-line:#DCE0EA;
+  --usa-line-soft:#EBEEF4;
+  --usa-track:#E5E8F0;
+  --usa-ink:#152B6B;
+  --usa-muted:#4F5B78;
+  --usa-ink-off:#8B93A8;
+
+  /* re-point the Royal tokens (royal-system.css :root) */
+  --navy:var(--usa-navy);
+  --navy-deep:var(--usa-navy-deep);
+  --navy-ink:var(--usa-navy-ink);
+  --gold:var(--usa-red);
+  --gold-deep:var(--usa-red-deep);
+  --gold-ink:var(--usa-red-deep);
+  --paper:var(--usa-paper);
+  --card:var(--usa-paper);
+  --card-tint:var(--usa-card-tint);
+  --line:var(--usa-line);
+  --line-soft:var(--usa-line-soft);
+  --track:var(--usa-track);
+  --ink:var(--usa-ink);
+  --muted:var(--usa-muted);
+  --ink-off:var(--usa-ink-off);
+}
+body{background:var(--usa-paper)}
+
+/* --- the header lockup: the real two-line mark, so it gets a taller seat than
+       Royal's one-line wordmark (img.brandmark was clamp(40px,7.2vw,64px)) ------- */
+html img.brandmark{height:clamp(86px,13vw,132px);width:auto;display:block;max-width:92vw}
+
+/* --- THE BALL. Navy at rest. Red once touched (the Royal 'awake' state). While an
+       answer is being fetched it moves between the two. No dog, no voice. ---------- */
+html .searchbox #sonnyball{
+  background:radial-gradient(circle at 32% 26%, var(--usa-navy-lift) 0%, #2B4489 24%, var(--usa-navy) 56%, var(--usa-navy-deep) 100%);
+  box-shadow:0 3px 8px rgba(21,43,107,.32), inset 0 2px 5px rgba(255,255,255,.28), inset 0 -4px 9px rgba(10,22,56,.45)}
+html .searchbox #sonnyball svg{stroke:#fff}
+html .searchbox #sonnyball.awake{
+  background:radial-gradient(circle at 32% 26%, var(--usa-navy-lift) 0%, #2B4489 24%, var(--usa-navy) 56%, var(--usa-navy-deep) 100%)}
+/* the ::before skin was Royal's blue sphere png; here it is the red ball */
+/* (the page retired Royal's ::before skin with content:none !important; the red ball needs it back) */
+html .searchbox #sonnyball::before{content:"" !important;display:block !important;position:absolute;inset:0;border-radius:50%;pointer-events:none;opacity:0;
+  transition:opacity .26s ease-out;
+  background:radial-gradient(circle at 32% 26%, var(--usa-red-lift) 0%, #C9303C 28%, var(--usa-red) 58%, var(--usa-red-deep) 100%)}
+html .searchbox #sonnyball.awake::before{opacity:1}
+html .searchbox #sonnyball.awake[aria-busy="true"]{animation:none;opacity:1}
+html .searchbox #sonnyball.awake[aria-busy="true"]::before{animation:usa-think 1.4s ease-in-out infinite}
+@keyframes usa-think{0%,100%{opacity:1}50%{opacity:0}}
+html .searchbox button[aria-busy="true"]::after{border-color:#fff}
+@media (prefers-reduced-motion:reduce){
+  html .searchbox #sonnyball.awake[aria-busy="true"]::before{animation:none;opacity:1}
+}
+.searchbox #q:focus{border-color:var(--usa-navy);box-shadow:0 12px 34px rgba(21,43,107,.22)}
+.searchbox #q:focus-visible{outline-color:var(--usa-navy)}
+
+/* --- the eight coins: navy material, white medallion, navy glyph with a red accent --- */
+.bubbles .coin{
+  background:radial-gradient(circle at 32% 24%, #EEF1F8 0%, #C3CBE3 22%, #6F84BC 48%, #2B4489 74%, var(--usa-navy) 100%);
+  box-shadow:0 10px 24px rgba(21,43,107,.22), inset 0 2px 6px rgba(255,255,255,.7), inset 0 -6px 12px rgba(10,22,56,.42)}
+.bubbles .bubble:hover .coin,.bubbles .bubble:focus-visible .coin{
+  box-shadow:0 16px 32px rgba(21,43,107,.30), inset 0 2px 6px rgba(255,255,255,.7), inset 0 -6px 12px rgba(10,22,56,.42)}
+.bubbles .coin .inner{box-shadow:inset 0 1px 4px rgba(21,43,107,.28)}
+.bubbles .coin .inner svg.usa-glyph{width:58%;height:auto;display:block;fill:var(--usa-navy)}
+.bubbles .coin .inner svg.usa-glyph .acc{fill:var(--usa-red)}
+.bubbles.nolabel .label .label-lockup{display:block;width:100%;max-width:104px;height:auto;margin:0 auto;overflow:visible}
+.label-lockup .t1{font:800 150px/1 Montserrat,system-ui,sans-serif;fill:var(--usa-navy);letter-spacing:4px}
+.bubble:hover .label-lockup .t1{fill:var(--usa-red)}
+
+/* --- the Our Why band follows the brand identity concept: the porch photo under a
+       navy-to-red wash, white type (the page's own rule paints it flat navy) --------- */
+html .why{
+  background:linear-gradient(118deg, rgba(21,43,107,.94) 0%, rgba(21,43,107,.86) 48%, rgba(188,31,43,.84) 100%),
+             url('usa-identity-porch.jpg') center/cover no-repeat, var(--usa-navy)}
+html .why p b{color:#fff}
+html .why p b a:hover,html .why .whyproof a:hover{color:#fff}
+html .why .whyproof a{color:#fff}
+html .why .whyproof a:focus-visible,html .why p b a:focus-visible{outline-color:#fff}
+
+/* --- the triangle: navy coins with white glyphs; the apex is the same two-colour ball */
+html .wayhome .homebubble .coin{
+  background:radial-gradient(circle at 32% 28%, #EEF1F8 0%, #C3CBE3 30%, #6F84BC 62%, var(--usa-navy) 100%);
+  box-shadow:0 4px 14px rgba(21,43,107,.22), inset 0 2px 6px rgba(255,255,255,.6)}
+html .wayhome .homebubble .coin .inner svg{width:56%;height:auto;display:block;fill:var(--usa-navy)}
+html .wayhome .homebubble .royal-endpoint-sonny{
+  background:radial-gradient(circle at 32% 26%, var(--usa-navy-lift) 0%, #2B4489 24%, var(--usa-navy) 56%, var(--usa-navy-deep) 100%);
+  box-shadow:0 5px 13px rgba(21,43,107,.3), inset 0 2px 5px rgba(255,255,255,.3), inset 0 -4px 9px rgba(10,22,56,.45)}
+html .wayhome .homebubble:hover .royal-endpoint-sonny,
+html .wayhome .homebubble:focus-visible .royal-endpoint-sonny,
+html .wayhome .homebubble:active .royal-endpoint-sonny{
+  background:radial-gradient(circle at 32% 26%, var(--usa-red-lift) 0%, #C9303C 28%, var(--usa-red) 58%, var(--usa-red-deep) 100%)}
+html .wayhome .homebubble:focus-visible{outline-color:var(--usa-navy)}
+
+/* --- the calculator pill ROVER's brain may still emit after an equity answer ------- */
+.calcgo{background:var(--usa-red) !important;color:#fff !important;box-shadow:0 6px 14px rgba(21,43,107,.2) !important}
+
+/* --- PENDING SLOTS (legal line, contact, apply link): visible on request ----------- */
+.why .whydraft{display:inline-block;margin:0 0 14px;font:700 11px/1 Montserrat,system-ui,sans-serif;letter-spacing:.16em;
+  text-transform:uppercase;color:#fff;background:rgba(255,255,255,.16);padding:6px 10px;border-radius:999px}
+footer .usa-contact{display:block;margin:8px 0 0;color:var(--muted)}
+footer .brandword{color:var(--usa-navy)}
+footer .brandword em{color:var(--usa-red)}
+
+/* --- THE PREVIEW CHIP (bottom-left; not part of the site) ------------------------- */
